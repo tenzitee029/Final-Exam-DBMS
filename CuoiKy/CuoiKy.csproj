@@ -64,6 +64,12 @@
     <Compile Include="FormBai4.Designer.cs">
       <DependentUpon>FormBai4.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBai5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBai5.Designer.cs">
+      <DependentUpon>FormBai5.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormBai4.resx">
       <DependentUpon>FormBai4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBai5.resx">
+      <DependentUpon>FormBai5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>

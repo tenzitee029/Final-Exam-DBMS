@@ -43,7 +43,8 @@ namespace CuoiKy
 
         private void btn_Bai5_Click(object sender, EventArgs e)
         {
-
+            FormBai5 f = new FormBai5();
+            f.ShowDialog();
         }
 
         private void btn_Bai6_Click(object sender, EventArgs e)
