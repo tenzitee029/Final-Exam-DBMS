@@ -11,16 +11,16 @@ using System.Windows.Forms;
 
 namespace CuoiKy
 {
-    public partial class FormBai3 : Form
+    public partial class FormBai4 : Form
     {
-        string strCon = @"Data Source=LAPTOP-DQP9I1OD\SQLEXPRESS;Initial Catalog = QuanLyThuVien; Integrated Security = True";
+        string strCon = @"Data Source=LAPTOP-DQP9I1OD\SQLEXPRESS;Initial Catalog = TinhToan; Integrated Security = True";
         SqlConnection sqlCon = null;
-        public FormBai3()
+        public FormBai4()
         {
             InitializeComponent();
         }
 
-        private void FormBai3_Load(object sender, EventArgs e)
+        private void FormBai4_Load(object sender, EventArgs e)
         {
 
         }
@@ -37,7 +37,7 @@ namespace CuoiKy
                 {
                     sqlCon.Open();
                     MessageBox.Show("Kết nối thành công");
-                    txt_isbn.Enabled = true;
+                    pnl_Noidung.Enabled = true;
                 }
             }
             catch (Exception ex)
@@ -52,9 +52,9 @@ namespace CuoiKy
             {
                 sqlCon.Close();
                 MessageBox.Show("Đã đóng kết nối");
-                txt_isbn.Clear();
-                dgv_DauSach.DataSource = null;
-                txt_isbn.Enabled = false;
+                pnl_Noidung.Enabled = false;
+                txt_namsinh.Clear();
+                txt_Ketqua.Clear();
             }
             else
             {
@@ -62,41 +62,36 @@ namespace CuoiKy
             }
         }
 
-        private void btn_Hienthi_Click(object sender, EventArgs e)
+        private void btn_Tinh_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txt_isbn.Text))
-            {
-                MessageBox.Show("Vui lòng nhập mã ISBN cần tra cứu");
-                txt_isbn.Focus();
+            if (!int.TryParse(txt_namsinh.Text.Trim(), out int Namsinh)) {
+                MessageBox.Show("Vui lòng nhập một năm sinh hợp lệ");
+                txt_namsinh.Focus();
                 return;
             }
             try
             {
-                using (SqlCommand cmd = new SqlCommand("sp_Thongtindausach", sqlCon))
+                string query = "SELECT dbo.fn_TinhTuoi(@Namsinh)";
+                using (SqlCommand cmd = new SqlCommand(query, sqlCon))
                 {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("isbn", txt_isbn.Text.Trim());
-                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
-                    {
-                        DataTable dt = new DataTable();
-                        adapter.Fill(dt);
-                        dgv_DauSach.DataSource = dt;
-                    }
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.AddWithValue("@Namsinh", Namsinh);
+                    object result = cmd.ExecuteScalar();
+                    txt_Ketqua.Text = result != null ? result.ToString() : "Không có kết quả";
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi hiển thị dữ liệu: " + ex.Message);
+                MessageBox.Show("Lỗi thực thi" + ex.Message);
             }
         }
 
-        private void FormBai3_FormClosing(object sender, FormClosingEventArgs e)
+        private void FormBai4_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (sqlCon != null && sqlCon.State == ConnectionState.Open)
             {
                 sqlCon.Close();
             }
         }
-        
     }
 }

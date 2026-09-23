@@ -146,6 +146,7 @@
             // txt_isbn
             // 
             this.txt_isbn.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_isbn.Enabled = false;
             this.txt_isbn.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_isbn.Location = new System.Drawing.Point(26, 181);
             this.txt_isbn.Name = "txt_isbn";
