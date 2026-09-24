@@ -38,6 +38,8 @@ namespace CuoiKy
                     sqlCon.Open();
                     MessageBox.Show("Kết nối thành công");
                     txt_isbn.Enabled = true;
+                    ssl_Trangthai.Text = "Đã kết nối";
+                    ssl_Trangthai.ForeColor = Color.Green;
                 }
             }
             catch (Exception ex)
@@ -55,6 +57,8 @@ namespace CuoiKy
                 txt_isbn.Clear();
                 dgv_DauSach.DataSource = null;
                 txt_isbn.Enabled = false;
+                ssl_Trangthai.Text = "Chưa kết nối";
+                ssl_Trangthai.ForeColor = Color.Red;
             }
             else
             {
@@ -66,7 +70,7 @@ namespace CuoiKy
         {
             if (string.IsNullOrWhiteSpace(txt_isbn.Text))
             {
-                MessageBox.Show("Vui lòng nhập mã ISBN cần tra cứu");
+                MessageBox.Show("Vui lòng nhập mã ISBN cần tra cứu hợp lệ");
                 txt_isbn.Focus();
                 return;
             }

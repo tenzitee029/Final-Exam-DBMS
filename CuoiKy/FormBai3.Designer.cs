@@ -41,10 +41,14 @@
             this.sp_ThongtinDausachTableAdapter = new CuoiKy.QuanLyThuVienDataSetTableAdapters.sp_ThongtinDausachTableAdapter();
             this.dgv_DauSach = new System.Windows.Forms.DataGridView();
             this.txt_isbn = new System.Windows.Forms.TextBox();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.ssl_Trangthai = new System.Windows.Forms.ToolStripStatusLabel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spThongtinDausachBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DauSach)).BeginInit();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -148,16 +152,45 @@
             this.txt_isbn.BackColor = System.Drawing.SystemColors.Window;
             this.txt_isbn.Enabled = false;
             this.txt_isbn.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_isbn.Location = new System.Drawing.Point(26, 181);
+            this.txt_isbn.Location = new System.Drawing.Point(161, 181);
             this.txt_isbn.Name = "txt_isbn";
             this.txt_isbn.Size = new System.Drawing.Size(100, 27);
             this.txt_isbn.TabIndex = 10;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ssl_Trangthai});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 452);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(813, 26);
+            this.statusStrip1.TabIndex = 11;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // ssl_Trangthai
+            // 
+            this.ssl_Trangthai.Name = "ssl_Trangthai";
+            this.ssl_Trangthai.Size = new System.Drawing.Size(92, 20);
+            this.ssl_Trangthai.Text = "Chưa kết nối";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(28, 184);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(111, 23);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Nhập ISBN:";
             // 
             // FormBai3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(813, 462);
+            this.ClientSize = new System.Drawing.Size(813, 478);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.txt_isbn);
             this.Controls.Add(this.dgv_DauSach);
             this.Controls.Add(this.btn_Hienthi);
@@ -173,6 +206,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.quanLyThuVienDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spThongtinDausachBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DauSach)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,5 +226,8 @@
         private QuanLyThuVienDataSetTableAdapters.sp_ThongtinDausachTableAdapter sp_ThongtinDausachTableAdapter;
         private System.Windows.Forms.DataGridView dgv_DauSach;
         private System.Windows.Forms.TextBox txt_isbn;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel ssl_Trangthai;
+        private System.Windows.Forms.Label label3;
     }
 }

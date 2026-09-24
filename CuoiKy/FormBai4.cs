@@ -38,6 +38,8 @@ namespace CuoiKy
                     sqlCon.Open();
                     MessageBox.Show("Kết nối thành công");
                     pnl_Noidung.Enabled = true;
+                    ssl_Trangthai.Text = "Đã kết nối";
+                    ssl_Trangthai.ForeColor = Color.Green;
                 }
             }
             catch (Exception ex)
@@ -55,6 +57,8 @@ namespace CuoiKy
                 pnl_Noidung.Enabled = false;
                 txt_namsinh.Clear();
                 txt_Ketqua.Clear();
+                ssl_Trangthai.Text = "Chưa kết nối";
+                ssl_Trangthai.ForeColor = Color.Red;
             }
             else
             {

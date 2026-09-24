@@ -39,8 +39,11 @@
             this.btn_Tinh = new System.Windows.Forms.Button();
             this.btn_Ketnoi = new System.Windows.Forms.Button();
             this.btn_Ngat = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.ssl_Trangthai = new System.Windows.Forms.ToolStripStatusLabel();
             this.panel1.SuspendLayout();
             this.pnl_Noidung.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -162,11 +165,29 @@
             this.btn_Ngat.UseVisualStyleBackColor = false;
             this.btn_Ngat.Click += new System.EventHandler(this.btn_Ngat_Click);
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ssl_Trangthai});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 338);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(614, 26);
+            this.statusStrip1.TabIndex = 9;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // ssl_Trangthai
+            // 
+            this.ssl_Trangthai.Name = "ssl_Trangthai";
+            this.ssl_Trangthai.Size = new System.Drawing.Size(92, 20);
+            this.ssl_Trangthai.Text = "Chưa kết nối";
+            // 
             // FormBai4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(614, 342);
+            this.ClientSize = new System.Drawing.Size(614, 364);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btn_Tinh);
             this.Controls.Add(this.btn_Ketnoi);
             this.Controls.Add(this.btn_Ngat);
@@ -180,6 +201,8 @@
             this.panel1.ResumeLayout(false);
             this.pnl_Noidung.ResumeLayout(false);
             this.pnl_Noidung.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,5 +221,7 @@
         private System.Windows.Forms.Button btn_Tinh;
         private System.Windows.Forms.Button btn_Ketnoi;
         private System.Windows.Forms.Button btn_Ngat;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel ssl_Trangthai;
     }
 }
