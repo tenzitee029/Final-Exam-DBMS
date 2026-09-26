@@ -59,21 +59,21 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.tab_5d = new System.Windows.Forms.TabPage();
+            this.dgv_5d = new System.Windows.Forms.DataGridView();
+            this.btn_Hienthi5d = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.tab_5e = new System.Windows.Forms.TabPage();
+            this.dgv_5e = new System.Windows.Forms.DataGridView();
+            this.btn_Hienthi5e = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.ssl_Trangthai = new System.Windows.Forms.ToolStripStatusLabel();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.btn_Hienthi5d = new System.Windows.Forms.Button();
-            this.dgv_5d = new System.Windows.Forms.DataGridView();
-            this.label15 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.btn_Hienthi5e = new System.Windows.Forms.Button();
-            this.dgv_5e = new System.Windows.Forms.DataGridView();
             this.tab.SuspendLayout();
             this.tab_Hethong.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -87,12 +87,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_5c)).BeginInit();
             this.panel4.SuspendLayout();
             this.tab_5d.SuspendLayout();
-            this.tab_5e.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_5d)).BeginInit();
-            this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.tab_5e.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_5e)).BeginInit();
+            this.panel6.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab
@@ -122,7 +122,7 @@
             this.tab_Hethong.Padding = new System.Windows.Forms.Padding(3);
             this.tab_Hethong.Size = new System.Drawing.Size(788, 391);
             this.tab_Hethong.TabIndex = 0;
-            this.tab_Hethong.Text = "Hệ thống";
+            this.tab_Hethong.Text = "Kết nối";
             // 
             // btn_Ngat
             // 
@@ -443,6 +443,63 @@
             this.tab_5d.TabIndex = 4;
             this.tab_5d.Text = "Câu 5d";
             // 
+            // dgv_5d
+            // 
+            this.dgv_5d.AllowUserToAddRows = false;
+            this.dgv_5d.AllowUserToDeleteRows = false;
+            this.dgv_5d.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_5d.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgv_5d.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_5d.Location = new System.Drawing.Point(32, 164);
+            this.dgv_5d.Name = "dgv_5d";
+            this.dgv_5d.ReadOnly = true;
+            this.dgv_5d.RowHeadersWidth = 51;
+            this.dgv_5d.RowTemplate.Height = 24;
+            this.dgv_5d.Size = new System.Drawing.Size(722, 202);
+            this.dgv_5d.TabIndex = 3;
+            // 
+            // btn_Hienthi5d
+            // 
+            this.btn_Hienthi5d.BackColor = System.Drawing.Color.Bisque;
+            this.btn_Hienthi5d.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Hienthi5d.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Hienthi5d.Location = new System.Drawing.Point(643, 118);
+            this.btn_Hienthi5d.Name = "btn_Hienthi5d";
+            this.btn_Hienthi5d.Size = new System.Drawing.Size(90, 40);
+            this.btn_Hienthi5d.TabIndex = 2;
+            this.btn_Hienthi5d.Text = "Hiển thị";
+            this.btn_Hienthi5d.UseVisualStyleBackColor = false;
+            this.btn_Hienthi5d.Click += new System.EventHandler(this.btn_Hienthi5d_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.label14);
+            this.panel5.Location = new System.Drawing.Point(32, 49);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(722, 63);
+            this.panel5.TabIndex = 1;
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(3, 8);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(714, 44);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Liệt kê những thông tin của tất cả độc giả đang mượn sách của thư viện đang trong" +
+    " tình trạng mượn quá hạn 14 ngày";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(53, 9);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(680, 28);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Liệt kê những độc giả người lớn đang mượn sách quá hạn";
+            // 
             // tab_5e
             // 
             this.tab_5e.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -455,6 +512,64 @@
             this.tab_5e.Size = new System.Drawing.Size(788, 391);
             this.tab_5e.TabIndex = 5;
             this.tab_5e.Text = "Câu 5e";
+            // 
+            // dgv_5e
+            // 
+            this.dgv_5e.AllowUserToAddRows = false;
+            this.dgv_5e.AllowUserToDeleteRows = false;
+            this.dgv_5e.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_5e.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgv_5e.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_5e.Location = new System.Drawing.Point(35, 196);
+            this.dgv_5e.Name = "dgv_5e";
+            this.dgv_5e.ReadOnly = true;
+            this.dgv_5e.RowHeadersWidth = 51;
+            this.dgv_5e.RowTemplate.Height = 24;
+            this.dgv_5e.Size = new System.Drawing.Size(717, 170);
+            this.dgv_5e.TabIndex = 3;
+            // 
+            // btn_Hienthi5e
+            // 
+            this.btn_Hienthi5e.BackColor = System.Drawing.Color.Bisque;
+            this.btn_Hienthi5e.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Hienthi5e.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Hienthi5e.Location = new System.Drawing.Point(641, 149);
+            this.btn_Hienthi5e.Name = "btn_Hienthi5e";
+            this.btn_Hienthi5e.Size = new System.Drawing.Size(84, 40);
+            this.btn_Hienthi5e.TabIndex = 2;
+            this.btn_Hienthi5e.Text = "Hiển thị";
+            this.btn_Hienthi5e.UseVisualStyleBackColor = false;
+            this.btn_Hienthi5e.Click += new System.EventHandler(this.btn_Hienthi5e_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.label16);
+            this.panel6.Location = new System.Drawing.Point(35, 75);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(717, 68);
+            this.panel6.TabIndex = 1;
+            // 
+            // label16
+            // 
+            this.label16.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(13, 9);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(686, 48);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "Liệt kê những những độc giả đang trong tình trạng mượn sách và những trẻ em độc g" +
+    "iả này đang bảo lãnh cũng đang trong tình trạng mượn sách";
+            // 
+            // label15
+            // 
+            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label15.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(8, 3);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(772, 67);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Liệt kê những độc giả người lớn đang mượn sách có trẻ em cũng đang mượn sách";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // statusStrip1
             // 
@@ -469,6 +584,7 @@
             // 
             // ssl_Trangthai
             // 
+            this.ssl_Trangthai.ForeColor = System.Drawing.Color.Red;
             this.ssl_Trangthai.Name = "ssl_Trangthai";
             this.ssl_Trangthai.Size = new System.Drawing.Size(92, 20);
             this.ssl_Trangthai.Text = "Chưa kết nối";
@@ -492,121 +608,6 @@
             this.label7.Size = new System.Drawing.Size(267, 28);
             this.label7.TabIndex = 0;
             this.label7.Text = "Xem thông tin độc giả";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(53, 9);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(680, 28);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Liệt kê những độc giả người lớn đang mượn sách quá hạn";
-            // 
-            // panel5
-            // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.label14);
-            this.panel5.Location = new System.Drawing.Point(32, 49);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(722, 63);
-            this.panel5.TabIndex = 1;
-            // 
-            // label14
-            // 
-            this.label14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(3, 8);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(714, 44);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Liệt kê những thông tin của tất cả độc giả đang mượn sách của thư viện đang trong" +
-    " tình trạng mượn quá hạn 14 ngày";
-            // 
-            // btn_Hienthi5d
-            // 
-            this.btn_Hienthi5d.BackColor = System.Drawing.Color.Bisque;
-            this.btn_Hienthi5d.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Hienthi5d.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Hienthi5d.Location = new System.Drawing.Point(643, 118);
-            this.btn_Hienthi5d.Name = "btn_Hienthi5d";
-            this.btn_Hienthi5d.Size = new System.Drawing.Size(90, 40);
-            this.btn_Hienthi5d.TabIndex = 2;
-            this.btn_Hienthi5d.Text = "Hiển thị";
-            this.btn_Hienthi5d.UseVisualStyleBackColor = false;
-            this.btn_Hienthi5d.Click += new System.EventHandler(this.btn_Hienthi5d_Click);
-            // 
-            // dgv_5d
-            // 
-            this.dgv_5d.AllowUserToAddRows = false;
-            this.dgv_5d.AllowUserToDeleteRows = false;
-            this.dgv_5d.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_5d.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dgv_5d.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_5d.Location = new System.Drawing.Point(32, 164);
-            this.dgv_5d.Name = "dgv_5d";
-            this.dgv_5d.ReadOnly = true;
-            this.dgv_5d.RowHeadersWidth = 51;
-            this.dgv_5d.RowTemplate.Height = 24;
-            this.dgv_5d.Size = new System.Drawing.Size(722, 202);
-            this.dgv_5d.TabIndex = 3;
-            // 
-            // label15
-            // 
-            this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label15.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(8, 3);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(772, 67);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Liệt kê những độc giả người lớn đang mượn sách có trẻ em cũng đang mượn sách";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel6
-            // 
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.label16);
-            this.panel6.Location = new System.Drawing.Point(35, 75);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(717, 68);
-            this.panel6.TabIndex = 1;
-            // 
-            // label16
-            // 
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(13, 9);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(686, 48);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "Liệt kê những những độc giả đang trong tình trạng mượn sách và những trẻ em độc g" +
-    "iả này đang bảo lãnh cũng đang trong tình trạng mượn sách";
-            // 
-            // btn_Hienthi5e
-            // 
-            this.btn_Hienthi5e.BackColor = System.Drawing.Color.Bisque;
-            this.btn_Hienthi5e.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Hienthi5e.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Hienthi5e.Location = new System.Drawing.Point(641, 149);
-            this.btn_Hienthi5e.Name = "btn_Hienthi5e";
-            this.btn_Hienthi5e.Size = new System.Drawing.Size(84, 40);
-            this.btn_Hienthi5e.TabIndex = 2;
-            this.btn_Hienthi5e.Text = "Hiển thị";
-            this.btn_Hienthi5e.UseVisualStyleBackColor = false;
-            this.btn_Hienthi5e.Click += new System.EventHandler(this.btn_Hienthi5e_Click);
-            // 
-            // dgv_5e
-            // 
-            this.dgv_5e.AllowUserToAddRows = false;
-            this.dgv_5e.AllowUserToDeleteRows = false;
-            this.dgv_5e.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_5e.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dgv_5e.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_5e.Location = new System.Drawing.Point(35, 196);
-            this.dgv_5e.Name = "dgv_5e";
-            this.dgv_5e.ReadOnly = true;
-            this.dgv_5e.RowHeadersWidth = 51;
-            this.dgv_5e.RowTemplate.Height = 24;
-            this.dgv_5e.Size = new System.Drawing.Size(717, 170);
-            this.dgv_5e.TabIndex = 3;
             // 
             // FormBai5
             // 
@@ -639,13 +640,13 @@
             this.panel4.PerformLayout();
             this.tab_5d.ResumeLayout(false);
             this.tab_5d.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_5d)).EndInit();
+            this.panel5.ResumeLayout(false);
             this.tab_5e.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_5e)).EndInit();
+            this.panel6.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_5d)).EndInit();
-            this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_5e)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
