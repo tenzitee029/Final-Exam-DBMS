@@ -39,8 +39,8 @@ namespace CuoiKy
                     ssl_Trangthai.ForeColor = Color.Green;
                     HienThiDuLieu("SELECT * FROM Cuonsach", dgv61);
                     HienThiDuLieu(dulieu62, dgv62);
-                    //HienThiDuLieu("SELECT * FROM Dausach", dgv63);
-                    //HienThiDuLieu("SELECT * FROM Dausach", dgv64);
+                    HienThiDuLieu("SELECT * FROM Dausach", dgv63);
+                    HienThiDuLieu("SELECT * FROM Dausach", dgv64);
                 }
             }
             catch (Exception ex)
@@ -125,7 +125,7 @@ namespace CuoiKy
                     }
                 }
                 tran.Rollback();
-                MessageBox.Show("Đã chạy Trigger thành công");
+                MessageBox.Show("Đã xóa thành công");
             }
             catch (Exception ex)
             {
@@ -141,12 +141,12 @@ namespace CuoiKy
                 MessageBox.Show("Vui lòng nhập mã ISBN, Mã cuốn sách và Mã độc giả hợp lệ");
                 return;
             }
-
+            SqlTransaction tran = sqlCon.BeginTransaction();
             try
             {
                 string sql = @"INSERT INTO Muon (isbn, ma_cuonsach, ma_DocGia, ngay_muon, ngay_hethan) 
                                VALUES (@isbn, @macuon, @madg, CAST(GETDATE() AS DATE), DATEADD(day, 14, CAST(GETDATE() AS DATE)))";
-                using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
+                using (SqlCommand cmd = new SqlCommand(sql, sqlCon, tran))
                 {
                     cmd.Parameters.AddWithValue("@isbn", txt_isbn62.Text.Trim());
                     cmd.Parameters.AddWithValue("@macuon", int.Parse(txt_masach62.Text.Trim()));
@@ -159,6 +159,61 @@ namespace CuoiKy
             }
             catch (Exception ex)
             {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+        }
+
+        private void btn_Capnhat63_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txt_isbn63.Text) || string.IsNullOrWhiteSpace(txt_masach63.Text))
+            {
+                MessageBox.Show("Vui lòng nhập mã ISBN và Mã cuốn sách hợp lệ");
+                return;
+            }
+            SqlTransaction tran = sqlCon.BeginTransaction();
+            try
+            {
+                string sql = "UPDATE Cuonsach SET tinhtrang = @tinhtrang WHERE isbn = @isbn AND ma_cuonsach = @macuon";
+                using (SqlCommand cmd = new SqlCommand(sql, sqlCon, tran))
+                {
+                    cmd.Parameters.AddWithValue("@tinhtrang", cbo_tinhtrang63.SelectedItem.ToString());
+                    cmd.Parameters.AddWithValue("@isbn", txt_isbn63.Text.Trim());
+                    cmd.Parameters.AddWithValue("@macuon", int.Parse(txt_masach63.Text.Trim()));
+
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Đã cập nhật thành công");
+                }
+                HienThiDuLieu("SELECT * FROM Dausach", dgv63);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+        }
+
+        private void btn_Capnhat64_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txt_matua64.Text) || string.IsNullOrWhiteSpace(txt_tuasach64.Text))
+            {
+                MessageBox.Show("Vui lòng nhập dữ liệu hợp lệ");
+            }
+            SqlTransaction tran = sqlCon.BeginTransaction();
+            try
+            {
+                string sql = "UPDATE Tuasach SET tacgia = @tacgia WHERE ma_tuasach = @matua";
+                using (SqlCommand cmd = new SqlCommand(sql, sqlCon, tran))
+                {
+                    cmd.Parameters.AddWithValue("@tacgia", txt_tg64.Text.Trim());
+                    cmd.Parameters.AddWithValue("@matua", int.Parse(txt_matua64.Text.Trim()));
+                    cmd.ExecuteNonQuery();
+                }
+
+                tran.Rollback();
+                MessageBox.Show("Đã cập nhật thành công");
+            }
+            catch (Exception ex)
+            {
+                tran.Rollback();
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
