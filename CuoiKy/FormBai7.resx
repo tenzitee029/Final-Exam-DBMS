@@ -117,14 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAtgAAAGsCAYAAADniNBPAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAR
-        OAAAETgByZ5xogAA/7JJREFUeF7s/WeUJVeVLQp//974xvfGeO/e1923+3bfvrcbuEADj8Y10AiEN6Ib
+        NgAAETYBbRc9XAAA/7JJREFUeF7s/WeUJVeVLQp//974xvfGeO/e1923+3bfvrcbuEADj8Y10AiEN6Ib
         BLQANV7CCUnIu5JK5X1WVtpK77333nvvvfd5vPcu5zfmjhOVp06lhExJlCBWjVXnZESciB07duw999pz
         rfX/gSKKKKKIIooooogiiihy2+T/E75BEUUUUUQRRRRRRBFFFHnjogBsRRRRRBFFFFFEEUUUuY2iAGxF
         FFFEEUUUUUQRRRS5jaIAbEUUUUQRRRRRRBFFFLmNogBsRRRRRBFFFFFEEUUUuY2iAGxFbrscHBwIVUQR
@@ -3893,4 +3890,14 @@
         vUp7rUTJ34n8F6dKlCi5kRIKhYy7lChR8oWE9VHVSSVK/n7k/wdkL2RIynNNQwAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>Viết hàm trả về tổng tiền thưởng cho nhân viên dựa vào tổng số giờ tham gia dự án (Time_Total) như sau:
+   - Nếu Time_Total &gt;=30 và &lt;=60 thì tổng tiền thưởng = 500 ($)
+   - Nếu Time_Total &gt;60 và &lt;100 thì tổng tiền thưởng = 1000 ($)
+   - Nếu Time_Total &gt;=100 và &lt;150 thì tổng tiền thưởng =1200($)
+   - Nếu Time_Total &gt;=150 thì tổng tiền thưởng = 1600 ($)</value>
+  </data>
+  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
