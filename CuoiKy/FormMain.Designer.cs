@@ -324,7 +324,7 @@
             // 
             this.btn_Bai10.BackColor = System.Drawing.Color.PaleGreen;
             this.btn_Bai10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Bai10.Font = new System.Drawing.Font("Unispace", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Bai10.Font = new System.Drawing.Font("Unispace", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Bai10.Location = new System.Drawing.Point(132, 460);
             this.btn_Bai10.Name = "btn_Bai10";
             this.btn_Bai10.Size = new System.Drawing.Size(85, 46);

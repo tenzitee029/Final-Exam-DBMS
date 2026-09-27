@@ -284,5 +284,13 @@ namespace CuoiKy
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
+
+        private void FormBai7_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (sqlCon != null && sqlCon.State == ConnectionState.Open)
+            {
+                sqlCon.Close();
+            }
+        }
     }
 }

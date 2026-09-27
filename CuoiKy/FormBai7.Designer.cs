@@ -84,16 +84,16 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.tab76 = new System.Windows.Forms.TabPage();
+            this.btn_Hienthi76 = new System.Windows.Forms.Button();
+            this.dgv76 = new System.Windows.Forms.DataGridView();
             this.gb_CachChay = new System.Windows.Forms.GroupBox();
+            this.rad_multi = new System.Windows.Forms.RadioButton();
+            this.rad_inline = new System.Windows.Forms.RadioButton();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.ssl_Trangthai = new System.Windows.Forms.ToolStripStatusLabel();
-            this.rad_inline = new System.Windows.Forms.RadioButton();
-            this.rad_multi = new System.Windows.Forms.RadioButton();
-            this.dgv76 = new System.Windows.Forms.DataGridView();
-            this.btn_Hienthi76 = new System.Windows.Forms.Button();
             this.tab.SuspendLayout();
             this.tab_Hethong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -115,10 +115,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_full75)).BeginInit();
             this.panel5.SuspendLayout();
             this.tab76.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv76)).BeginInit();
             this.gb_CachChay.SuspendLayout();
             this.panel6.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv76)).BeginInit();
             this.SuspendLayout();
             // 
             // tab
@@ -240,6 +240,7 @@
             // btn_Tinh71
             // 
             this.btn_Tinh71.BackColor = System.Drawing.Color.LightCyan;
+            this.btn_Tinh71.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Tinh71.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Tinh71.Location = new System.Drawing.Point(22, 434);
             this.btn_Tinh71.Name = "btn_Tinh71";
@@ -752,6 +753,34 @@
             this.tab76.TabIndex = 6;
             this.tab76.Text = "7.6";
             // 
+            // btn_Hienthi76
+            // 
+            this.btn_Hienthi76.BackColor = System.Drawing.Color.LightCyan;
+            this.btn_Hienthi76.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Hienthi76.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Hienthi76.Location = new System.Drawing.Point(678, 191);
+            this.btn_Hienthi76.Name = "btn_Hienthi76";
+            this.btn_Hienthi76.Size = new System.Drawing.Size(87, 36);
+            this.btn_Hienthi76.TabIndex = 4;
+            this.btn_Hienthi76.Text = "Hiển thị";
+            this.btn_Hienthi76.UseVisualStyleBackColor = false;
+            this.btn_Hienthi76.Click += new System.EventHandler(this.btn_Hienthi76_Click);
+            // 
+            // dgv76
+            // 
+            this.dgv76.AllowUserToAddRows = false;
+            this.dgv76.AllowUserToDeleteRows = false;
+            this.dgv76.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv76.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgv76.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv76.Location = new System.Drawing.Point(41, 233);
+            this.dgv76.Name = "dgv76";
+            this.dgv76.ReadOnly = true;
+            this.dgv76.RowHeadersWidth = 51;
+            this.dgv76.RowTemplate.Height = 24;
+            this.dgv76.Size = new System.Drawing.Size(754, 223);
+            this.dgv76.TabIndex = 3;
+            // 
             // gb_CachChay
             // 
             this.gb_CachChay.BackColor = System.Drawing.SystemColors.ScrollBar;
@@ -765,6 +794,30 @@
             this.gb_CachChay.TabIndex = 2;
             this.gb_CachChay.TabStop = false;
             this.gb_CachChay.Text = "Cách chạy";
+            // 
+            // rad_multi
+            // 
+            this.rad_multi.AutoSize = true;
+            this.rad_multi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rad_multi.Location = new System.Drawing.Point(370, 26);
+            this.rad_multi.Name = "rad_multi";
+            this.rad_multi.Size = new System.Drawing.Size(320, 23);
+            this.rad_multi.TabIndex = 2;
+            this.rad_multi.TabStop = true;
+            this.rad_multi.Text = "Multi-statement Table-Valued Function";
+            this.rad_multi.UseVisualStyleBackColor = true;
+            // 
+            // rad_inline
+            // 
+            this.rad_inline.AutoSize = true;
+            this.rad_inline.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rad_inline.Location = new System.Drawing.Point(53, 26);
+            this.rad_inline.Name = "rad_inline";
+            this.rad_inline.Size = new System.Drawing.Size(243, 23);
+            this.rad_inline.TabIndex = 1;
+            this.rad_inline.TabStop = true;
+            this.rad_inline.Text = "Inline Table-Valued Function";
+            this.rad_inline.UseVisualStyleBackColor = true;
             // 
             // panel6
             // 
@@ -814,58 +867,6 @@
             this.ssl_Trangthai.Size = new System.Drawing.Size(92, 20);
             this.ssl_Trangthai.Text = "Chưa kết nối";
             // 
-            // rad_inline
-            // 
-            this.rad_inline.AutoSize = true;
-            this.rad_inline.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rad_inline.Location = new System.Drawing.Point(53, 26);
-            this.rad_inline.Name = "rad_inline";
-            this.rad_inline.Size = new System.Drawing.Size(243, 23);
-            this.rad_inline.TabIndex = 1;
-            this.rad_inline.TabStop = true;
-            this.rad_inline.Text = "Inline Table-Valued Function";
-            this.rad_inline.UseVisualStyleBackColor = true;
-            // 
-            // rad_multi
-            // 
-            this.rad_multi.AutoSize = true;
-            this.rad_multi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rad_multi.Location = new System.Drawing.Point(370, 26);
-            this.rad_multi.Name = "rad_multi";
-            this.rad_multi.Size = new System.Drawing.Size(320, 23);
-            this.rad_multi.TabIndex = 2;
-            this.rad_multi.TabStop = true;
-            this.rad_multi.Text = "Multi-statement Table-Valued Function";
-            this.rad_multi.UseVisualStyleBackColor = true;
-            // 
-            // dgv76
-            // 
-            this.dgv76.AllowUserToAddRows = false;
-            this.dgv76.AllowUserToDeleteRows = false;
-            this.dgv76.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv76.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dgv76.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv76.Location = new System.Drawing.Point(41, 233);
-            this.dgv76.Name = "dgv76";
-            this.dgv76.ReadOnly = true;
-            this.dgv76.RowHeadersWidth = 51;
-            this.dgv76.RowTemplate.Height = 24;
-            this.dgv76.Size = new System.Drawing.Size(754, 223);
-            this.dgv76.TabIndex = 3;
-            // 
-            // btn_Hienthi76
-            // 
-            this.btn_Hienthi76.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_Hienthi76.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Hienthi76.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Hienthi76.Location = new System.Drawing.Point(678, 191);
-            this.btn_Hienthi76.Name = "btn_Hienthi76";
-            this.btn_Hienthi76.Size = new System.Drawing.Size(87, 36);
-            this.btn_Hienthi76.TabIndex = 4;
-            this.btn_Hienthi76.Text = "Hiển thị";
-            this.btn_Hienthi76.UseVisualStyleBackColor = false;
-            this.btn_Hienthi76.Click += new System.EventHandler(this.btn_Hienthi76_Click);
-            // 
             // FormBai7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -875,6 +876,7 @@
             this.Controls.Add(this.tab);
             this.Name = "FormBai7";
             this.Text = "FormBai7";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormBai7_FormClosing);
             this.Load += new System.EventHandler(this.FormBai7_Load);
             this.tab.ResumeLayout(false);
             this.tab_Hethong.ResumeLayout(false);
@@ -905,12 +907,12 @@
             this.panel5.ResumeLayout(false);
             this.tab76.ResumeLayout(false);
             this.tab76.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv76)).EndInit();
             this.gb_CachChay.ResumeLayout(false);
             this.gb_CachChay.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv76)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -180,10 +180,5 @@ namespace CuoiKy
                 }
             }
         }
-
-        private void FormBai6_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
