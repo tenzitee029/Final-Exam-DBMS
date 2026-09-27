@@ -49,13 +49,14 @@ namespace CuoiKy
 
         private void btn_Bai6_Click(object sender, EventArgs e)
         {
-            FormBai6 f6 = new FormBai6();
-            f6.ShowDialog();
+            FormBai6 f = new FormBai6();
+            f.ShowDialog();
         }
 
         private void btn_Bai7_Click(object sender, EventArgs e)
         {
-
+            FormBai7 f = new FormBai7();
+            f.ShowDialog();
         }
 
         private void btn_Bai8_Click(object sender, EventArgs e)

@@ -59,34 +59,34 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.tab63 = new System.Windows.Forms.TabPage();
+            this.dgv63 = new System.Windows.Forms.DataGridView();
+            this.btn_Capnhat63 = new System.Windows.Forms.Button();
+            this.cbo_tinhtrang63 = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txt_masach63 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txt_isbn63 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.tab64 = new System.Windows.Forms.TabPage();
+            this.dgv64 = new System.Windows.Forms.DataGridView();
+            this.btn_Capnhat64 = new System.Windows.Forms.Button();
+            this.txt_tomtat = new System.Windows.Forms.TextBox();
+            this.txt_tg64 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txt_tuasach64 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txt_matua64 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.ssl_Trangthai = new System.Windows.Forms.ToolStripStatusLabel();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.label12 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txt_isbn63 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txt_masach63 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.cbo_tinhtrang63 = new System.Windows.Forms.ComboBox();
-            this.btn_Capnhat63 = new System.Windows.Forms.Button();
-            this.dgv63 = new System.Windows.Forms.DataGridView();
-            this.label17 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.txt_matua64 = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.txt_tuasach64 = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.txt_tg64 = new System.Windows.Forms.TextBox();
-            this.txt_tomtat = new System.Windows.Forms.TextBox();
-            this.btn_Capnhat64 = new System.Windows.Forms.Button();
-            this.dgv64 = new System.Windows.Forms.DataGridView();
             this.tab.SuspendLayout();
             this.tab_Hethong.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -97,12 +97,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv62)).BeginInit();
             this.panel3.SuspendLayout();
             this.tab63.SuspendLayout();
-            this.tab64.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv63)).BeginInit();
-            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.tab64.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv64)).BeginInit();
+            this.panel5.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab
@@ -450,6 +450,122 @@
             this.tab63.TabIndex = 3;
             this.tab63.Text = "6.3";
             // 
+            // dgv63
+            // 
+            this.dgv63.AllowUserToAddRows = false;
+            this.dgv63.AllowUserToDeleteRows = false;
+            this.dgv63.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv63.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgv63.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv63.Location = new System.Drawing.Point(38, 189);
+            this.dgv63.Name = "dgv63";
+            this.dgv63.ReadOnly = true;
+            this.dgv63.RowHeadersWidth = 51;
+            this.dgv63.RowTemplate.Height = 24;
+            this.dgv63.Size = new System.Drawing.Size(718, 207);
+            this.dgv63.TabIndex = 9;
+            // 
+            // btn_Capnhat63
+            // 
+            this.btn_Capnhat63.BackColor = System.Drawing.Color.Bisque;
+            this.btn_Capnhat63.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Capnhat63.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Capnhat63.Location = new System.Drawing.Point(648, 148);
+            this.btn_Capnhat63.Name = "btn_Capnhat63";
+            this.btn_Capnhat63.Size = new System.Drawing.Size(87, 35);
+            this.btn_Capnhat63.TabIndex = 8;
+            this.btn_Capnhat63.Text = "Cập nhật";
+            this.btn_Capnhat63.UseVisualStyleBackColor = false;
+            this.btn_Capnhat63.Click += new System.EventHandler(this.btn_Capnhat63_Click);
+            // 
+            // cbo_tinhtrang63
+            // 
+            this.cbo_tinhtrang63.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo_tinhtrang63.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbo_tinhtrang63.FormattingEnabled = true;
+            this.cbo_tinhtrang63.Items.AddRange(new object[] {
+            "yes",
+            "no"});
+            this.cbo_tinhtrang63.Location = new System.Drawing.Point(468, 116);
+            this.cbo_tinhtrang63.Name = "cbo_tinhtrang63";
+            this.cbo_tinhtrang63.Size = new System.Drawing.Size(100, 30);
+            this.cbo_tinhtrang63.TabIndex = 7;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(372, 124);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(90, 22);
+            this.label16.TabIndex = 6;
+            this.label16.Text = "Tình trạng";
+            // 
+            // txt_masach63
+            // 
+            this.txt_masach63.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_masach63.Location = new System.Drawing.Point(202, 151);
+            this.txt_masach63.Name = "txt_masach63";
+            this.txt_masach63.Size = new System.Drawing.Size(86, 30);
+            this.txt_masach63.TabIndex = 5;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(34, 159);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(162, 22);
+            this.label15.TabIndex = 4;
+            this.label15.Text = "Nhập mã cuốn sách";
+            // 
+            // txt_isbn63
+            // 
+            this.txt_isbn63.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_isbn63.Location = new System.Drawing.Point(185, 116);
+            this.txt_isbn63.Name = "txt_isbn63";
+            this.txt_isbn63.Size = new System.Drawing.Size(103, 30);
+            this.txt_isbn63.TabIndex = 3;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(34, 124);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(129, 22);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Nhập mã ISBN";
+            // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.label13);
+            this.panel4.Location = new System.Drawing.Point(38, 47);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(718, 65);
+            this.panel4.TabIndex = 1;
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(12, 8);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(684, 53);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Khi thuộc tính tình trạng trên bảng cuốn sách được cập nhật thì trạng thái của đầ" +
+    "u sách cũng được cập";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(299, 10);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(176, 28);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Cập nhật sách";
+            // 
             // tab64
             // 
             this.tab64.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -471,149 +587,104 @@
             this.tab64.TabIndex = 4;
             this.tab64.Text = "6.4";
             // 
-            // statusStrip1
+            // dgv64
             // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ssl_Trangthai});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 424);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 26);
-            this.statusStrip1.TabIndex = 1;
-            this.statusStrip1.Text = "statusStrip1";
+            this.dgv64.AllowUserToAddRows = false;
+            this.dgv64.AllowUserToDeleteRows = false;
+            this.dgv64.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgv64.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv64.Location = new System.Drawing.Point(37, 192);
+            this.dgv64.Name = "dgv64";
+            this.dgv64.ReadOnly = true;
+            this.dgv64.RowHeadersWidth = 51;
+            this.dgv64.RowTemplate.Height = 24;
+            this.dgv64.Size = new System.Drawing.Size(715, 204);
+            this.dgv64.TabIndex = 11;
             // 
-            // ssl_Trangthai
+            // btn_Capnhat64
             // 
-            this.ssl_Trangthai.ForeColor = System.Drawing.Color.Red;
-            this.ssl_Trangthai.Name = "ssl_Trangthai";
-            this.ssl_Trangthai.Size = new System.Drawing.Size(92, 20);
-            this.ssl_Trangthai.Text = "Chưa kết nối";
+            this.btn_Capnhat64.BackColor = System.Drawing.Color.Bisque;
+            this.btn_Capnhat64.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Capnhat64.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Capnhat64.Location = new System.Drawing.Point(660, 149);
+            this.btn_Capnhat64.Name = "btn_Capnhat64";
+            this.btn_Capnhat64.Size = new System.Drawing.Size(92, 33);
+            this.btn_Capnhat64.TabIndex = 10;
+            this.btn_Capnhat64.Text = "Cập nhật";
+            this.btn_Capnhat64.UseVisualStyleBackColor = false;
+            this.btn_Capnhat64.Click += new System.EventHandler(this.btn_Capnhat64_Click);
             // 
-            // label12
+            // txt_tomtat
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(299, 10);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(176, 28);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Cập nhật sách";
+            this.txt_tomtat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tomtat.Location = new System.Drawing.Point(512, 152);
+            this.txt_tomtat.Name = "txt_tomtat";
+            this.txt_tomtat.Size = new System.Drawing.Size(121, 30);
+            this.txt_tomtat.TabIndex = 9;
             // 
-            // panel4
+            // txt_tg64
             // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.label13);
-            this.panel4.Location = new System.Drawing.Point(38, 47);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(718, 65);
-            this.panel4.TabIndex = 1;
+            this.txt_tg64.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tg64.Location = new System.Drawing.Point(512, 117);
+            this.txt_tg64.Name = "txt_tg64";
+            this.txt_tg64.Size = new System.Drawing.Size(121, 30);
+            this.txt_tg64.TabIndex = 8;
             // 
-            // label13
+            // label22
             // 
-            this.label13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(12, 8);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(684, 53);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Khi thuộc tính tình trạng trên bảng cuốn sách được cập nhật thì trạng thái của đầ" +
-    "u sách cũng được cập";
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(369, 155);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(70, 22);
+            this.label22.TabIndex = 7;
+            this.label22.Text = "Tóm tắt";
             // 
-            // label14
+            // label21
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(34, 124);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(129, 22);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Nhập mã ISBN";
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(369, 123);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(137, 22);
+            this.label21.TabIndex = 6;
+            this.label21.Text = "Nhập mã tác giả";
             // 
-            // txt_isbn63
+            // txt_tuasach64
             // 
-            this.txt_isbn63.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_isbn63.Location = new System.Drawing.Point(185, 116);
-            this.txt_isbn63.Name = "txt_isbn63";
-            this.txt_isbn63.Size = new System.Drawing.Size(103, 30);
-            this.txt_isbn63.TabIndex = 3;
+            this.txt_tuasach64.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tuasach64.Location = new System.Drawing.Point(189, 152);
+            this.txt_tuasach64.Name = "txt_tuasach64";
+            this.txt_tuasach64.Size = new System.Drawing.Size(121, 30);
+            this.txt_tuasach64.TabIndex = 5;
             // 
-            // label15
+            // label20
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(34, 159);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(162, 22);
-            this.label15.TabIndex = 4;
-            this.label15.Text = "Nhập mã cuốn sách";
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(33, 155);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(122, 22);
+            this.label20.TabIndex = 4;
+            this.label20.Text = "Nhập tựa sách";
             // 
-            // txt_masach63
+            // txt_matua64
             // 
-            this.txt_masach63.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_masach63.Location = new System.Drawing.Point(202, 151);
-            this.txt_masach63.Name = "txt_masach63";
-            this.txt_masach63.Size = new System.Drawing.Size(86, 30);
-            this.txt_masach63.TabIndex = 5;
+            this.txt_matua64.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_matua64.Location = new System.Drawing.Point(189, 117);
+            this.txt_matua64.Name = "txt_matua64";
+            this.txt_matua64.Size = new System.Drawing.Size(121, 30);
+            this.txt_matua64.TabIndex = 3;
             // 
-            // label16
+            // label19
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(372, 124);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(90, 22);
-            this.label16.TabIndex = 6;
-            this.label16.Text = "Tình trạng";
-            // 
-            // cbo_tinhtrang63
-            // 
-            this.cbo_tinhtrang63.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbo_tinhtrang63.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbo_tinhtrang63.FormattingEnabled = true;
-            this.cbo_tinhtrang63.Items.AddRange(new object[] {
-            "yes",
-            "no"});
-            this.cbo_tinhtrang63.Location = new System.Drawing.Point(468, 116);
-            this.cbo_tinhtrang63.Name = "cbo_tinhtrang63";
-            this.cbo_tinhtrang63.Size = new System.Drawing.Size(100, 30);
-            this.cbo_tinhtrang63.TabIndex = 7;
-            // 
-            // btn_Capnhat63
-            // 
-            this.btn_Capnhat63.BackColor = System.Drawing.Color.Bisque;
-            this.btn_Capnhat63.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Capnhat63.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Capnhat63.Location = new System.Drawing.Point(648, 148);
-            this.btn_Capnhat63.Name = "btn_Capnhat63";
-            this.btn_Capnhat63.Size = new System.Drawing.Size(87, 35);
-            this.btn_Capnhat63.TabIndex = 8;
-            this.btn_Capnhat63.Text = "Cập nhật";
-            this.btn_Capnhat63.UseVisualStyleBackColor = false;
-            this.btn_Capnhat63.Click += new System.EventHandler(this.btn_Capnhat63_Click);
-            // 
-            // dgv63
-            // 
-            this.dgv63.AllowUserToAddRows = false;
-            this.dgv63.AllowUserToDeleteRows = false;
-            this.dgv63.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv63.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dgv63.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv63.Location = new System.Drawing.Point(38, 189);
-            this.dgv63.Name = "dgv63";
-            this.dgv63.ReadOnly = true;
-            this.dgv63.RowHeadersWidth = 51;
-            this.dgv63.RowTemplate.Height = 24;
-            this.dgv63.Size = new System.Drawing.Size(718, 207);
-            this.dgv63.TabIndex = 9;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(329, 10);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(134, 28);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Thông báo";
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(33, 123);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(150, 22);
+            this.label19.TabIndex = 2;
+            this.label19.Text = "Nhập mã tựa sách";
             // 
             // panel5
             // 
@@ -634,104 +705,33 @@
             this.label18.Text = "Viết trigger khi thêm mới, sửa tên tác giả, thêm/sửa một tựa sách thì in ra câu t" +
     "hông báo bằng Tiếng Việt ‘Đã thêm mới tựa sách’";
             // 
-            // label19
+            // label17
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(33, 123);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(150, 22);
-            this.label19.TabIndex = 2;
-            this.label19.Text = "Nhập mã tựa sách";
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(329, 10);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(134, 28);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Thông báo";
             // 
-            // txt_matua64
+            // statusStrip1
             // 
-            this.txt_matua64.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_matua64.Location = new System.Drawing.Point(189, 117);
-            this.txt_matua64.Name = "txt_matua64";
-            this.txt_matua64.Size = new System.Drawing.Size(121, 30);
-            this.txt_matua64.TabIndex = 3;
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ssl_Trangthai});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 424);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(800, 26);
+            this.statusStrip1.TabIndex = 1;
+            this.statusStrip1.Text = "statusStrip1";
             // 
-            // label20
+            // ssl_Trangthai
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(33, 155);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(122, 22);
-            this.label20.TabIndex = 4;
-            this.label20.Text = "Nhập tựa sách";
-            // 
-            // txt_tuasach64
-            // 
-            this.txt_tuasach64.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tuasach64.Location = new System.Drawing.Point(189, 152);
-            this.txt_tuasach64.Name = "txt_tuasach64";
-            this.txt_tuasach64.Size = new System.Drawing.Size(121, 30);
-            this.txt_tuasach64.TabIndex = 5;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(369, 123);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(137, 22);
-            this.label21.TabIndex = 6;
-            this.label21.Text = "Nhập mã tác giả";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(369, 155);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(70, 22);
-            this.label22.TabIndex = 7;
-            this.label22.Text = "Tóm tắt";
-            // 
-            // txt_tg64
-            // 
-            this.txt_tg64.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tg64.Location = new System.Drawing.Point(512, 117);
-            this.txt_tg64.Name = "txt_tg64";
-            this.txt_tg64.Size = new System.Drawing.Size(121, 30);
-            this.txt_tg64.TabIndex = 8;
-            // 
-            // txt_tomtat
-            // 
-            this.txt_tomtat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tomtat.Location = new System.Drawing.Point(512, 152);
-            this.txt_tomtat.Name = "txt_tomtat";
-            this.txt_tomtat.Size = new System.Drawing.Size(121, 30);
-            this.txt_tomtat.TabIndex = 9;
-            // 
-            // btn_Capnhat64
-            // 
-            this.btn_Capnhat64.BackColor = System.Drawing.Color.Bisque;
-            this.btn_Capnhat64.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Capnhat64.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Capnhat64.Location = new System.Drawing.Point(660, 149);
-            this.btn_Capnhat64.Name = "btn_Capnhat64";
-            this.btn_Capnhat64.Size = new System.Drawing.Size(92, 33);
-            this.btn_Capnhat64.TabIndex = 10;
-            this.btn_Capnhat64.Text = "Cập nhật";
-            this.btn_Capnhat64.UseVisualStyleBackColor = false;
-            this.btn_Capnhat64.Click += new System.EventHandler(this.btn_Capnhat64_Click);
-            // 
-            // dgv64
-            // 
-            this.dgv64.AllowUserToAddRows = false;
-            this.dgv64.AllowUserToDeleteRows = false;
-            this.dgv64.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dgv64.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv64.Location = new System.Drawing.Point(37, 192);
-            this.dgv64.Name = "dgv64";
-            this.dgv64.ReadOnly = true;
-            this.dgv64.RowHeadersWidth = 51;
-            this.dgv64.RowTemplate.Height = 24;
-            this.dgv64.Size = new System.Drawing.Size(715, 204);
-            this.dgv64.TabIndex = 11;
+            this.ssl_Trangthai.ForeColor = System.Drawing.Color.Red;
+            this.ssl_Trangthai.Name = "ssl_Trangthai";
+            this.ssl_Trangthai.Size = new System.Drawing.Size(92, 20);
+            this.ssl_Trangthai.Text = "Chưa kết nối";
             // 
             // FormBai6
             // 
@@ -742,6 +742,7 @@
             this.Controls.Add(this.tab);
             this.Name = "FormBai6";
             this.Text = "FormBai6";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormBai6_FormClosing);
             this.Load += new System.EventHandler(this.FormBai6_Load);
             this.tab.ResumeLayout(false);
             this.tab_Hethong.ResumeLayout(false);
@@ -759,14 +760,14 @@
             this.panel3.PerformLayout();
             this.tab63.ResumeLayout(false);
             this.tab63.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv63)).EndInit();
+            this.panel4.ResumeLayout(false);
             this.tab64.ResumeLayout(false);
             this.tab64.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv64)).EndInit();
+            this.panel5.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv63)).EndInit();
-            this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv64)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
