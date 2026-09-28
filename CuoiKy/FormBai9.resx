@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Cho một lược đồ CSDL dùng để quản lý hoạt động sửa chữa và bảo trì xe của một ga ra như sau:
+THO(MaTho, TenTho, Nhom, NhomTruong)
+Tân từ:
+    Mỗi người thợ đều có một mã so (MaTho) để nhận diện, một tên (TenTho) và chỉ thuộc một nhóm. Nhóm trưởng của mỗi nhóm là một trong những người thợ của nhóm đó.
+    MGT(MaTho) = MGT(NhomTruong)
+CONGVIEC(MaCV, NoiDungCV)
+Tân từ:
+    Dịch vụ sửa xe được chia thành nhiều công việc để dễ dàng tính toán chi phí với khách hàng. Mỗi công việc đều có một mã (MaCV) và thuộc tính “NoiDungCV” mô tả nội dung của công việc.
+HOPDONG(SoHD, NgayHD, MaKH, SoXe, TriGiaHD, NgayGiaoDK, NgayNgThu)
+Tân từ:
+    Mỗi hợp đồng sửa chữa đều có một mã số phân biệt. NgayHD là ngày ký hợp đồng sửa xe với khách hàng là chủ xe (MaKH). SoXe là số đăng bộ của xe đem đến sửa. Một khách hàng có thể ký nhiều hợp đồng sửa chữa nhiều xe khác nhau hoặc sửa chữa nhiều lần cho cùng một xe nhung trong cung một ngày, những công việc sửa chữa cho một xe chỉ ký hợp đồng một lần. TriGiaHD là tổng trị giá của hóa đơn. NgayGiaoDK là ngày dự kiến phải giao xe cho khách. NgayNgThu là ngày nghiệm thu thật sự sau khi đã sửa chữa xong để thanh lý hợp đồng.
+KHACHHANG(MaKH, TenKH, DiaChi, DienThoai)
+Tân từ:
+    Mỗi khách hàng có một MAKH để phân biệt, một tên (TenKH), một địa chỉ (DiaChi) và một số điện thoại để theo dõi công nợ.
+CHITIET_HD(SoHD, MaCV, TriGiaCV, MaTho, KhoanTHo)
+Tân từ:
+    Mỗi hợp đồng sửa xe có thể gồm nhiều công việc, MaCV là mã số của từng công việc, TriGiaCV là chi phí của công việc đã tính toán với khách. Mỗi công việc của hợp đồng được giao cho một người thợ (MaTho) phụ trách. Một người thợ có thể được giao một hoặc nhiều công việc của một hay nhiều hợp đồng khác nhau. KhoanTho là số tiền giao khoán cho người thợ ve công việc sửa chữa tương ứng.
+PHIEUTHU(SoPT, NgaylapPT, SoHD, MaKH, HoTen, SoTienThu)
+Tân từ:
+    Khách hàng (MaKH) có thể thanh toán tiền của một hợp đồng (SoHD) làm nhiều lần trước hoặc sau khi nghiệm thu (trong cùng một ngày hoặc khác ngày). Mỗi lần thanh toán đều có số phiếu thu (SoPT) để phân biệt, NgayLapPT là ngày lập phiếu thu. SoTienThu là số tiền thanh toán của lần thu đó. HoTen là ho tên của người mang tiền đến thanh toán (có thể khác với người đứng ra ký hợp đồng).
+ Yêu cầu:
+      Cài đặt các ràng buộc có trong lược đồ CSDL 
+      Viết các hàm thực hiện các yêu cầu sau:
+</value>
+  </data>
+  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>
