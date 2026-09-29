@@ -52,35 +52,46 @@ namespace CuoiKy
         }
 
         string dt71 = @"SELECT nv.MaNV, (nv.HoNV + ' ' + nv.TenLot + ' ' + nv.TenNV) AS HoTen, 
-                             pb.MaPB, pb.TenPB, nv.Luong 
-                      FROM NHANVIEN nv 
-                      JOIN PHONGBAN pb ON nv.MaPB = pb.MaPB";
+                               pb.MaPB, pb.TenPB, 
+                               nv.Luong AS LuongCoBan,
+                               dbo.fn_TinhTienThuong(ISNULL((SELECT SUM(ThoiGian) FROM PHANCONG WHERE MaNV = nv.MaNV), 0)) AS LuongThuong,
+                               (nv.Luong + dbo.fn_TinhTienThuong(ISNULL((SELECT SUM(ThoiGian) FROM PHANCONG WHERE MaNV = nv.MaNV), 0))) AS TongLuongNhan
+                        FROM NHANVIEN nv 
+                        JOIN PHONGBAN pb ON nv.MaPB = pb.MaPB";
         string dt72 = @"SELECT nv.MaNV, 
-                                   (nv.HoNV + ' ' + nv.TenLot + ' ' + nv.TenNV) AS HoTen, 
-                                   da.MaDA, da.TenDA, 
-                                   nv.Luong, 
-                                   pc.ThoiGian 
-                            FROM PHANCONG pc
-                            JOIN NHANVIEN nv ON pc.MaNV = nv.MaNV
-                            JOIN DEAN da ON pc.MaDA = da.MaDA";
+                           (nv.HoNV + ' ' + nv.TenLot + ' ' + nv.TenNV) AS HoTen, 
+                           da.MaDA, da.TenDA, 
+                           nv.Luong AS LuongCoBan, 
+                           pc.ThoiGian,
+                           dbo.fn_TinhTienThuong(pc.ThoiGian) AS LuongThuongDA,
+                           ROUND(((nv.Luong / 160.0) * pc.ThoiGian + dbo.fn_TinhTienThuong(pc.ThoiGian)), 2) AS TongLuongNhanDA
+                    FROM PHANCONG pc
+                    JOIN NHANVIEN nv ON pc.MaNV = nv.MaNV
+                    JOIN DEAN da ON pc.MaDA = da.MaDA";
         string dt73 = @"SELECT pb.MaPB, pb.TenPB, 
-                                  nv.MaNV, 
-                                  (nv.HoNV + ' ' + nv.TenLot + ' ' + nv.TenNV) AS HoTen, 
-                                  nv.Luong 
-                           FROM PHONGBAN pb
-                           JOIN NHANVIEN nv ON pb.MaPB = nv.MaPB";
+                           nv.MaNV, 
+                           (nv.HoNV + ' ' + nv.TenLot + ' ' + nv.TenNV) AS HoTen, 
+                           nv.Luong AS LuongCoBan,
+                           dbo.fn_TinhTienThuong((SELECT SUM(ThoiGian) FROM PHANCONG WHERE MaNV = nv.MaNV)) AS LuongThuong,
+                           (nv.Luong + dbo.fn_TinhTienThuong((SELECT SUM(ThoiGian) FROM PHANCONG WHERE MaNV = nv.MaNV))) AS TongLuongNhan
+                    FROM PHONGBAN pb
+                    JOIN NHANVIEN nv ON pb.MaPB = nv.MaPB";
         string dt74 = @"SELECT pc.MaNV, 
-                       (nv.HoNV + ' ' + nv.TenLot + ' ' + nv.TenNV) AS HoTen, 
-                       pc.MaDA, da.TenDA, 
-                       pc.ThoiGian 
-                FROM PHANCONG pc
-                JOIN NHANVIEN nv ON pc.MaNV = nv.MaNV
-                JOIN DEAN da ON pc.MaDA = da.MaDA";
+                               (nv.HoNV + ' ' + nv.TenLot + ' ' + nv.TenNV) AS HoTen, 
+                               pc.MaDA, da.TenDA, 
+                               pc.ThoiGian 
+                        FROM PHANCONG pc
+                        JOIN NHANVIEN nv ON pc.MaNV = nv.MaNV
+                        JOIN DEAN da ON pc.MaDA = da.MaDA";
         string dt75 = @"SELECT pb.MaPB, pb.TenPB, da.MaDA, da.TenDA, da.DiaDiemDA 
-                FROM PHONGBAN pb 
-                JOIN DEAN da ON pb.MaPB = da.MaPB";
-        string dt76 = @"SELECT nv.MaNV, nv.HoNV, nv.TenLot, nv.TenNV, nv.NgaySinh, nv.Phai, nv.DiaChi, nv.Luong, nv.MaPB 
-                FROM NHANVIEN nv";
+                        FROM PHONGBAN pb 
+                        JOIN DEAN da ON pb.MaPB = da.MaPB";
+        string dt76 = @"SELECT nv.MaNV, nv.HoNV, nv.TenLot, nv.TenNV, nv.NgaySinh, nv.Phai, nv.DiaChi, 
+                           nv.Luong AS LuongCoBan,
+                           dbo.fn_TinhTienThuong((SELECT SUM(ThoiGian) FROM PHANCONG WHERE MaNV = nv.MaNV)) AS LuongThuong,
+                           (nv.Luong + dbo.fn_TinhTienThuong((SELECT SUM(ThoiGian) FROM PHANCONG WHERE MaNV = nv.MaNV))) AS TongLuongNhan,
+                           nv.MaPB 
+                    FROM NHANVIEN nv";
         private void btn_Ketnoi_Click(object sender, EventArgs e)
         {
             try
@@ -154,10 +165,13 @@ namespace CuoiKy
                     txt_luongtb71.Text = luongTB.ToString();
                 }
                 string sqlLoc = @"SELECT nv.MaNV, (nv.HoNV + ' ' + nv.TenLot + ' ' + nv.TenNV) AS HoTen, 
-                                          pb.MaPB, pb.TenPB, nv.Luong 
-                                   FROM NHANVIEN nv 
-                                   JOIN PHONGBAN pb ON nv.MaPB = pb.MaPB 
-                                   WHERE nv.MaPB = @MaPB"; ;
+                                         pb.MaPB, pb.TenPB, 
+                                         nv.Luong AS LuongCoBan,
+                                         dbo.fn_TinhTienThuong(ISNULL((SELECT SUM(ThoiGian) FROM PHANCONG WHERE MaNV = nv.MaNV), 0)) AS LuongThuong,
+                                         (nv.Luong + dbo.fn_TinhTienThuong(ISNULL((SELECT SUM(ThoiGian) FROM PHANCONG WHERE MaNV = nv.MaNV), 0))) AS TongLuongNhan
+                                  FROM NHANVIEN nv 
+                                  JOIN PHONGBAN pb ON nv.MaPB = pb.MaPB 
+                                  WHERE nv.MaPB = @MaPB"; ;
                 HienThiDuLieu(sqlLoc, dgv71, new SqlParameter("@MaPB", maPB));
             }
             catch (Exception ex)
