@@ -31,61 +31,61 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBai8));
             this.tab = new System.Windows.Forms.TabControl();
             this.tab_Ketnoi = new System.Windows.Forms.TabPage();
-            this.tab81 = new System.Windows.Forms.TabPage();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.ssl_Trangthai = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tab82 = new System.Windows.Forms.TabPage();
-            this.tab83 = new System.Windows.Forms.TabPage();
-            this.tab84 = new System.Windows.Forms.TabPage();
-            this.tab85 = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btn_Ketnoi = new System.Windows.Forms.Button();
             this.btn_Ngat = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dgv81 = new System.Windows.Forms.DataGridView();
+            this.btn_Ketnoi = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tab81 = new System.Windows.Forms.TabPage();
             this.btn_Thongke81 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.dgv81 = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tab82 = new System.Windows.Forms.TabPage();
+            this.dgv82 = new System.Windows.Forms.DataGridView();
+            this.btn_Thongke82 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.btn_Thongke82 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dgv82 = new System.Windows.Forms.DataGridView();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tab83 = new System.Windows.Forms.TabPage();
+            this.btn_Thongke83 = new System.Windows.Forms.Button();
+            this.dgv83 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.dgv83 = new System.Windows.Forms.DataGridView();
-            this.btn_Thongke83 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tab84 = new System.Windows.Forms.TabPage();
+            this.dgv84 = new System.Windows.Forms.DataGridView();
+            this.btn_Thongke84 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.btn_Thongke84 = new System.Windows.Forms.Button();
-            this.dgv84 = new System.Windows.Forms.DataGridView();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tab85 = new System.Windows.Forms.TabPage();
+            this.btn_Thongke85 = new System.Windows.Forms.Button();
+            this.dgv85 = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.dgv85 = new System.Windows.Forms.DataGridView();
-            this.btn_Thongke85 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.ssl_Trangthai = new System.Windows.Forms.ToolStripStatusLabel();
             this.tab.SuspendLayout();
             this.tab_Ketnoi.SuspendLayout();
-            this.tab81.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
-            this.tab82.SuspendLayout();
-            this.tab83.SuspendLayout();
-            this.tab84.SuspendLayout();
-            this.tab85.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.tab81.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv81)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.tab82.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv82)).BeginInit();
-            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.tab83.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv83)).BeginInit();
-            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.tab84.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv84)).BeginInit();
-            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.tab85.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv85)).BeginInit();
+            this.panel5.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab
@@ -117,109 +117,18 @@
             this.tab_Ketnoi.TabIndex = 0;
             this.tab_Ketnoi.Text = "Kết nối";
             // 
-            // tab81
+            // btn_Ngat
             // 
-            this.tab81.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tab81.Controls.Add(this.btn_Thongke81);
-            this.tab81.Controls.Add(this.dgv81);
-            this.tab81.Controls.Add(this.panel1);
-            this.tab81.Controls.Add(this.label2);
-            this.tab81.Location = new System.Drawing.Point(4, 25);
-            this.tab81.Name = "tab81";
-            this.tab81.Padding = new System.Windows.Forms.Padding(3);
-            this.tab81.Size = new System.Drawing.Size(852, 517);
-            this.tab81.TabIndex = 1;
-            this.tab81.Text = "8.1";
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ssl_Trangthai});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 520);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(860, 26);
-            this.statusStrip1.TabIndex = 1;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // ssl_Trangthai
-            // 
-            this.ssl_Trangthai.ForeColor = System.Drawing.Color.Red;
-            this.ssl_Trangthai.Name = "ssl_Trangthai";
-            this.ssl_Trangthai.Size = new System.Drawing.Size(92, 20);
-            this.ssl_Trangthai.Text = "Chưa kết nối";
-            // 
-            // tab82
-            // 
-            this.tab82.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tab82.Controls.Add(this.dgv82);
-            this.tab82.Controls.Add(this.btn_Thongke82);
-            this.tab82.Controls.Add(this.panel2);
-            this.tab82.Controls.Add(this.label4);
-            this.tab82.Location = new System.Drawing.Point(4, 25);
-            this.tab82.Name = "tab82";
-            this.tab82.Size = new System.Drawing.Size(852, 517);
-            this.tab82.TabIndex = 2;
-            this.tab82.Text = "8.2";
-            // 
-            // tab83
-            // 
-            this.tab83.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tab83.Controls.Add(this.btn_Thongke83);
-            this.tab83.Controls.Add(this.dgv83);
-            this.tab83.Controls.Add(this.panel3);
-            this.tab83.Controls.Add(this.label6);
-            this.tab83.Location = new System.Drawing.Point(4, 25);
-            this.tab83.Name = "tab83";
-            this.tab83.Size = new System.Drawing.Size(852, 517);
-            this.tab83.TabIndex = 3;
-            this.tab83.Text = "8.3";
-            // 
-            // tab84
-            // 
-            this.tab84.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tab84.Controls.Add(this.dgv84);
-            this.tab84.Controls.Add(this.btn_Thongke84);
-            this.tab84.Controls.Add(this.panel4);
-            this.tab84.Controls.Add(this.label7);
-            this.tab84.Location = new System.Drawing.Point(4, 25);
-            this.tab84.Name = "tab84";
-            this.tab84.Size = new System.Drawing.Size(852, 517);
-            this.tab84.TabIndex = 4;
-            this.tab84.Text = "8.4";
-            // 
-            // tab85
-            // 
-            this.tab85.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tab85.Controls.Add(this.btn_Thongke85);
-            this.tab85.Controls.Add(this.dgv85);
-            this.tab85.Controls.Add(this.panel5);
-            this.tab85.Controls.Add(this.label8);
-            this.tab85.Location = new System.Drawing.Point(4, 25);
-            this.tab85.Name = "tab85";
-            this.tab85.Size = new System.Drawing.Size(852, 517);
-            this.tab85.TabIndex = 5;
-            this.tab85.Text = "8.5";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(22, 51);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(719, 425);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(374, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 34);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Bài 8";
+            this.btn_Ngat.BackColor = System.Drawing.Color.LightCoral;
+            this.btn_Ngat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Ngat.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Ngat.Location = new System.Drawing.Point(747, 280);
+            this.btn_Ngat.Name = "btn_Ngat";
+            this.btn_Ngat.Size = new System.Drawing.Size(94, 43);
+            this.btn_Ngat.TabIndex = 4;
+            this.btn_Ngat.Text = "Ngắt";
+            this.btn_Ngat.UseVisualStyleBackColor = false;
+            this.btn_Ngat.Click += new System.EventHandler(this.btn_Ngat_Click);
             // 
             // btn_Ketnoi
             // 
@@ -234,47 +143,52 @@
             this.btn_Ketnoi.UseVisualStyleBackColor = false;
             this.btn_Ketnoi.Click += new System.EventHandler(this.btn_Ketnoi_Click);
             // 
-            // btn_Ngat
+            // label1
             // 
-            this.btn_Ngat.BackColor = System.Drawing.Color.LightCoral;
-            this.btn_Ngat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Ngat.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Ngat.Location = new System.Drawing.Point(747, 280);
-            this.btn_Ngat.Name = "btn_Ngat";
-            this.btn_Ngat.Size = new System.Drawing.Size(94, 43);
-            this.btn_Ngat.TabIndex = 4;
-            this.btn_Ngat.Text = "Ngắt";
-            this.btn_Ngat.UseVisualStyleBackColor = false;
-            this.btn_Ngat.Click += new System.EventHandler(this.btn_Ngat_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(374, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(85, 34);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Bài 8";
             // 
-            // label2
+            // pictureBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(191, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(465, 34);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Đề án có >2 nhân viên tham gia";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(22, 51);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(719, 425);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
-            // label3
+            // tab81
             // 
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(8, 8);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(766, 58);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Với mỗi dự án có nhiều hơn 2 nhân viên tham gia, trả về danh sách mã dự án, tên d" +
-    "ự án và số lượng nhân viên tham gia";
+            this.tab81.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tab81.Controls.Add(this.btn_Thongke81);
+            this.tab81.Controls.Add(this.dgv81);
+            this.tab81.Controls.Add(this.panel1);
+            this.tab81.Controls.Add(this.label2);
+            this.tab81.Location = new System.Drawing.Point(4, 25);
+            this.tab81.Name = "tab81";
+            this.tab81.Padding = new System.Windows.Forms.Padding(3);
+            this.tab81.Size = new System.Drawing.Size(852, 517);
+            this.tab81.TabIndex = 1;
+            this.tab81.Text = "8.1";
             // 
-            // panel1
+            // btn_Thongke81
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(35, 49);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(779, 77);
-            this.panel1.TabIndex = 4;
+            this.btn_Thongke81.BackColor = System.Drawing.Color.LightCyan;
+            this.btn_Thongke81.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Thongke81.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Thongke81.Location = new System.Drawing.Point(682, 146);
+            this.btn_Thongke81.Name = "btn_Thongke81";
+            this.btn_Thongke81.Size = new System.Drawing.Size(114, 40);
+            this.btn_Thongke81.TabIndex = 9;
+            this.btn_Thongke81.Text = "Thống kê";
+            this.btn_Thongke81.UseVisualStyleBackColor = false;
+            this.btn_Thongke81.Click += new System.EventHandler(this.btn_Thongke81_Click);
             // 
             // dgv81
             // 
@@ -290,28 +204,74 @@
             this.dgv81.Size = new System.Drawing.Size(779, 264);
             this.dgv81.TabIndex = 8;
             // 
-            // btn_Thongke81
+            // panel1
             // 
-            this.btn_Thongke81.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_Thongke81.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Thongke81.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Thongke81.Location = new System.Drawing.Point(682, 146);
-            this.btn_Thongke81.Name = "btn_Thongke81";
-            this.btn_Thongke81.Size = new System.Drawing.Size(114, 40);
-            this.btn_Thongke81.TabIndex = 9;
-            this.btn_Thongke81.Text = "Thống kê";
-            this.btn_Thongke81.UseVisualStyleBackColor = false;
-            this.btn_Thongke81.Click += new System.EventHandler(this.btn_Thongke81_Click);
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Location = new System.Drawing.Point(35, 49);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(779, 77);
+            this.panel1.TabIndex = 4;
             // 
-            // label4
+            // label3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(83, 11);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(678, 34);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Phòng >2 nhân viên, đếm NV có lương >25000";
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(8, 8);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(766, 58);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Với mỗi dự án có nhiều hơn 2 nhân viên tham gia, trả về danh sách mã dự án, tên d" +
+    "ự án và số lượng nhân viên tham gia";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(191, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(465, 34);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Đề án có >2 nhân viên tham gia";
+            // 
+            // tab82
+            // 
+            this.tab82.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tab82.Controls.Add(this.dgv82);
+            this.tab82.Controls.Add(this.btn_Thongke82);
+            this.tab82.Controls.Add(this.panel2);
+            this.tab82.Controls.Add(this.label4);
+            this.tab82.Location = new System.Drawing.Point(4, 25);
+            this.tab82.Name = "tab82";
+            this.tab82.Size = new System.Drawing.Size(852, 517);
+            this.tab82.TabIndex = 2;
+            this.tab82.Text = "8.2";
+            // 
+            // dgv82
+            // 
+            this.dgv82.AllowUserToAddRows = false;
+            this.dgv82.AllowUserToDeleteRows = false;
+            this.dgv82.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv82.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgv82.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv82.Location = new System.Drawing.Point(37, 204);
+            this.dgv82.Name = "dgv82";
+            this.dgv82.RowHeadersWidth = 51;
+            this.dgv82.RowTemplate.Height = 24;
+            this.dgv82.Size = new System.Drawing.Size(779, 264);
+            this.dgv82.TabIndex = 11;
+            // 
+            // btn_Thongke82
+            // 
+            this.btn_Thongke82.BackColor = System.Drawing.Color.LightCyan;
+            this.btn_Thongke82.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Thongke82.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Thongke82.Location = new System.Drawing.Point(689, 148);
+            this.btn_Thongke82.Name = "btn_Thongke82";
+            this.btn_Thongke82.Size = new System.Drawing.Size(114, 40);
+            this.btn_Thongke82.TabIndex = 10;
+            this.btn_Thongke82.Text = "Thống kê";
+            this.btn_Thongke82.UseVisualStyleBackColor = false;
+            this.btn_Thongke82.Click += new System.EventHandler(this.btn_Thongke82_Click);
             // 
             // panel2
             // 
@@ -332,62 +292,55 @@
             this.label5.Text = "Với mỗi phòng có nhiều hơn 2 nhân viên, trả về mã phòng và số lượng nhân viên có " +
     "lương lớn hơn 25000";
             // 
-            // btn_Thongke82
+            // label4
             // 
-            this.btn_Thongke82.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_Thongke82.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Thongke82.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Thongke82.Location = new System.Drawing.Point(689, 148);
-            this.btn_Thongke82.Name = "btn_Thongke82";
-            this.btn_Thongke82.Size = new System.Drawing.Size(114, 40);
-            this.btn_Thongke82.TabIndex = 10;
-            this.btn_Thongke82.Text = "Thống kê";
-            this.btn_Thongke82.UseVisualStyleBackColor = false;
-            this.btn_Thongke82.Click += new System.EventHandler(this.btn_Thongke82_Click);
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(83, 11);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(678, 34);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Phòng >2 nhân viên, đếm NV có lương >25000";
             // 
-            // label6
+            // tab83
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(31, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(773, 34);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Phòng có lương TB >30000, trả về số lượng nhân viên";
+            this.tab83.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tab83.Controls.Add(this.btn_Thongke83);
+            this.tab83.Controls.Add(this.dgv83);
+            this.tab83.Controls.Add(this.panel3);
+            this.tab83.Controls.Add(this.label6);
+            this.tab83.Location = new System.Drawing.Point(4, 25);
+            this.tab83.Name = "tab83";
+            this.tab83.Size = new System.Drawing.Size(852, 517);
+            this.tab83.TabIndex = 3;
+            this.tab83.Text = "8.3";
             // 
-            // label7
+            // btn_Thongke83
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 10);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(847, 34);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Phòng có lương TB >30000, trả về số lượng nhân viên Nam";
+            this.btn_Thongke83.BackColor = System.Drawing.Color.LightCyan;
+            this.btn_Thongke83.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Thongke83.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Thongke83.Location = new System.Drawing.Point(690, 153);
+            this.btn_Thongke83.Name = "btn_Thongke83";
+            this.btn_Thongke83.Size = new System.Drawing.Size(114, 40);
+            this.btn_Thongke83.TabIndex = 13;
+            this.btn_Thongke83.Text = "Thống kê";
+            this.btn_Thongke83.UseVisualStyleBackColor = false;
+            this.btn_Thongke83.Click += new System.EventHandler(this.btn_Thongke83_Click);
             // 
-            // label8
+            // dgv83
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(71, 12);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(704, 34);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Số lượng nhân viên phòng 5 tham gia từng đề án";
-            // 
-            // dgv82
-            // 
-            this.dgv82.AllowUserToAddRows = false;
-            this.dgv82.AllowUserToDeleteRows = false;
-            this.dgv82.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv82.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dgv82.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv82.Location = new System.Drawing.Point(37, 204);
-            this.dgv82.Name = "dgv82";
-            this.dgv82.RowHeadersWidth = 51;
-            this.dgv82.RowTemplate.Height = 24;
-            this.dgv82.Size = new System.Drawing.Size(779, 264);
-            this.dgv82.TabIndex = 11;
+            this.dgv83.AllowUserToAddRows = false;
+            this.dgv83.AllowUserToDeleteRows = false;
+            this.dgv83.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv83.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgv83.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv83.Location = new System.Drawing.Point(37, 199);
+            this.dgv83.Name = "dgv83";
+            this.dgv83.RowHeadersWidth = 51;
+            this.dgv83.RowTemplate.Height = 24;
+            this.dgv83.Size = new System.Drawing.Size(779, 264);
+            this.dgv83.TabIndex = 12;
             // 
             // panel3
             // 
@@ -408,32 +361,55 @@
             this.label9.Text = "Với mỗi phòng có mức lương trung bình lớn hơn 30000, trả về mã phòng, tên phòng, " +
     "số lượng nhân viên của phòng đó";
             // 
-            // dgv83
+            // label6
             // 
-            this.dgv83.AllowUserToAddRows = false;
-            this.dgv83.AllowUserToDeleteRows = false;
-            this.dgv83.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv83.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dgv83.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv83.Location = new System.Drawing.Point(37, 199);
-            this.dgv83.Name = "dgv83";
-            this.dgv83.RowHeadersWidth = 51;
-            this.dgv83.RowTemplate.Height = 24;
-            this.dgv83.Size = new System.Drawing.Size(779, 264);
-            this.dgv83.TabIndex = 12;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(31, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(773, 34);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Phòng có lương TB >30000, trả về số lượng nhân viên";
             // 
-            // btn_Thongke83
+            // tab84
             // 
-            this.btn_Thongke83.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_Thongke83.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Thongke83.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Thongke83.Location = new System.Drawing.Point(690, 153);
-            this.btn_Thongke83.Name = "btn_Thongke83";
-            this.btn_Thongke83.Size = new System.Drawing.Size(114, 40);
-            this.btn_Thongke83.TabIndex = 13;
-            this.btn_Thongke83.Text = "Thống kê";
-            this.btn_Thongke83.UseVisualStyleBackColor = false;
-            this.btn_Thongke83.Click += new System.EventHandler(this.btn_Thongke83_Click);
+            this.tab84.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tab84.Controls.Add(this.dgv84);
+            this.tab84.Controls.Add(this.btn_Thongke84);
+            this.tab84.Controls.Add(this.panel4);
+            this.tab84.Controls.Add(this.label7);
+            this.tab84.Location = new System.Drawing.Point(4, 25);
+            this.tab84.Name = "tab84";
+            this.tab84.Size = new System.Drawing.Size(852, 517);
+            this.tab84.TabIndex = 4;
+            this.tab84.Text = "8.4";
+            // 
+            // dgv84
+            // 
+            this.dgv84.AllowUserToAddRows = false;
+            this.dgv84.AllowUserToDeleteRows = false;
+            this.dgv84.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv84.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgv84.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv84.Location = new System.Drawing.Point(37, 208);
+            this.dgv84.Name = "dgv84";
+            this.dgv84.RowHeadersWidth = 51;
+            this.dgv84.RowTemplate.Height = 24;
+            this.dgv84.Size = new System.Drawing.Size(779, 264);
+            this.dgv84.TabIndex = 15;
+            // 
+            // btn_Thongke84
+            // 
+            this.btn_Thongke84.BackColor = System.Drawing.Color.LightCyan;
+            this.btn_Thongke84.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Thongke84.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Thongke84.Location = new System.Drawing.Point(680, 162);
+            this.btn_Thongke84.Name = "btn_Thongke84";
+            this.btn_Thongke84.Size = new System.Drawing.Size(114, 40);
+            this.btn_Thongke84.TabIndex = 14;
+            this.btn_Thongke84.Text = "Thống kê";
+            this.btn_Thongke84.UseVisualStyleBackColor = false;
+            this.btn_Thongke84.Click += new System.EventHandler(this.btn_Thongke84_Click);
             // 
             // panel4
             // 
@@ -454,32 +430,55 @@
             this.label10.Text = "Với mỗi phòng có mức lương trung bình lớn hơn 30000, trả về mã phòng, tên phòng, " +
     "số lượng nhân viên nam của phòng đó ";
             // 
-            // btn_Thongke84
+            // label7
             // 
-            this.btn_Thongke84.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_Thongke84.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Thongke84.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Thongke84.Location = new System.Drawing.Point(680, 162);
-            this.btn_Thongke84.Name = "btn_Thongke84";
-            this.btn_Thongke84.Size = new System.Drawing.Size(114, 40);
-            this.btn_Thongke84.TabIndex = 14;
-            this.btn_Thongke84.Text = "Thống kê";
-            this.btn_Thongke84.UseVisualStyleBackColor = false;
-            this.btn_Thongke84.Click += new System.EventHandler(this.btn_Thongke84_Click);
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(3, 10);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(847, 34);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Phòng có lương TB >30000, trả về số lượng nhân viên Nam";
             // 
-            // dgv84
+            // tab85
             // 
-            this.dgv84.AllowUserToAddRows = false;
-            this.dgv84.AllowUserToDeleteRows = false;
-            this.dgv84.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv84.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dgv84.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv84.Location = new System.Drawing.Point(37, 208);
-            this.dgv84.Name = "dgv84";
-            this.dgv84.RowHeadersWidth = 51;
-            this.dgv84.RowTemplate.Height = 24;
-            this.dgv84.Size = new System.Drawing.Size(779, 264);
-            this.dgv84.TabIndex = 15;
+            this.tab85.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tab85.Controls.Add(this.btn_Thongke85);
+            this.tab85.Controls.Add(this.dgv85);
+            this.tab85.Controls.Add(this.panel5);
+            this.tab85.Controls.Add(this.label8);
+            this.tab85.Location = new System.Drawing.Point(4, 25);
+            this.tab85.Name = "tab85";
+            this.tab85.Size = new System.Drawing.Size(852, 517);
+            this.tab85.TabIndex = 5;
+            this.tab85.Text = "8.5";
+            // 
+            // btn_Thongke85
+            // 
+            this.btn_Thongke85.BackColor = System.Drawing.Color.LightCyan;
+            this.btn_Thongke85.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Thongke85.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Thongke85.Location = new System.Drawing.Point(689, 158);
+            this.btn_Thongke85.Name = "btn_Thongke85";
+            this.btn_Thongke85.Size = new System.Drawing.Size(114, 40);
+            this.btn_Thongke85.TabIndex = 17;
+            this.btn_Thongke85.Text = "Thống kê";
+            this.btn_Thongke85.UseVisualStyleBackColor = false;
+            this.btn_Thongke85.Click += new System.EventHandler(this.btn_Thongke85_Click);
+            // 
+            // dgv85
+            // 
+            this.dgv85.AllowUserToAddRows = false;
+            this.dgv85.AllowUserToDeleteRows = false;
+            this.dgv85.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv85.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgv85.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv85.Location = new System.Drawing.Point(37, 204);
+            this.dgv85.Name = "dgv85";
+            this.dgv85.RowHeadersWidth = 51;
+            this.dgv85.RowTemplate.Height = 24;
+            this.dgv85.Size = new System.Drawing.Size(779, 264);
+            this.dgv85.TabIndex = 16;
             // 
             // panel5
             // 
@@ -500,32 +499,33 @@
             this.label11.Text = "Với mỗi dự án, trả về mã số dự án, tên dự án và số lượng nhân viên phòng số 5 tha" +
     "m gia\r\n";
             // 
-            // dgv85
+            // label8
             // 
-            this.dgv85.AllowUserToAddRows = false;
-            this.dgv85.AllowUserToDeleteRows = false;
-            this.dgv85.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv85.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dgv85.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv85.Location = new System.Drawing.Point(37, 204);
-            this.dgv85.Name = "dgv85";
-            this.dgv85.RowHeadersWidth = 51;
-            this.dgv85.RowTemplate.Height = 24;
-            this.dgv85.Size = new System.Drawing.Size(779, 264);
-            this.dgv85.TabIndex = 16;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(71, 12);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(704, 34);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Số lượng nhân viên phòng 5 tham gia từng đề án";
             // 
-            // btn_Thongke85
+            // statusStrip1
             // 
-            this.btn_Thongke85.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_Thongke85.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Thongke85.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Thongke85.Location = new System.Drawing.Point(689, 158);
-            this.btn_Thongke85.Name = "btn_Thongke85";
-            this.btn_Thongke85.Size = new System.Drawing.Size(114, 40);
-            this.btn_Thongke85.TabIndex = 17;
-            this.btn_Thongke85.Text = "Thống kê";
-            this.btn_Thongke85.UseVisualStyleBackColor = false;
-            this.btn_Thongke85.Click += new System.EventHandler(this.btn_Thongke85_Click);
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ssl_Trangthai});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 520);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(860, 26);
+            this.statusStrip1.TabIndex = 1;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // ssl_Trangthai
+            // 
+            this.ssl_Trangthai.ForeColor = System.Drawing.Color.Red;
+            this.ssl_Trangthai.Name = "ssl_Trangthai";
+            this.ssl_Trangthai.Size = new System.Drawing.Size(92, 20);
+            this.ssl_Trangthai.Text = "Chưa kết nối";
             // 
             // FormBai8
             // 
@@ -535,35 +535,35 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tab);
             this.Name = "FormBai8";
-            this.Text = "FormBai8";
+            this.Text = "Bài 8";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormBai8_FormClosing);
             this.Load += new System.EventHandler(this.FormBai8_Load);
             this.tab.ResumeLayout(false);
             this.tab_Ketnoi.ResumeLayout(false);
             this.tab_Ketnoi.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tab81.ResumeLayout(false);
             this.tab81.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv81)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.tab82.ResumeLayout(false);
             this.tab82.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv82)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.tab83.ResumeLayout(false);
             this.tab83.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv83)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.tab84.ResumeLayout(false);
             this.tab84.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv84)).EndInit();
+            this.panel4.ResumeLayout(false);
             this.tab85.ResumeLayout(false);
             this.tab85.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv81)).EndInit();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv82)).EndInit();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv83)).EndInit();
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv84)).EndInit();
-            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv85)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

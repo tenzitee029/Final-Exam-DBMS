@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBai9));
             this.tab = new System.Windows.Forms.TabControl();
             this.tab_Ketnoi = new System.Windows.Forms.TabPage();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
             this.btn_Ngat = new System.Windows.Forms.Button();
             this.btn_Ketnoi = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,6 +41,7 @@
             this.dgv91 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.tab92 = new System.Windows.Forms.TabPage();
             this.dgv92 = new System.Windows.Forms.DataGridView();
             this.btn_Thongke92 = new System.Windows.Forms.Button();
@@ -63,13 +66,11 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.ssl_Trangthai = new System.Windows.Forms.ToolStripStatusLabel();
             this.tab.SuspendLayout();
             this.tab_Ketnoi.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.tab91.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv91)).BeginInit();
             this.panel1.SuspendLayout();
@@ -85,7 +86,6 @@
             this.tab95.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv95)).BeginInit();
             this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -117,6 +117,25 @@
             this.tab_Ketnoi.Size = new System.Drawing.Size(858, 469);
             this.tab_Ketnoi.TabIndex = 0;
             this.tab_Ketnoi.Text = "Kết nối";
+            // 
+            // panel6
+            // 
+            this.panel6.AutoScroll = true;
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.label12);
+            this.panel6.Location = new System.Drawing.Point(37, 51);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(782, 340);
+            this.panel6.TabIndex = 5;
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(18, 13);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(727, 384);
+            this.label12.TabIndex = 0;
+            this.label12.Text = resources.GetString("label12.Text");
             // 
             // btn_Ngat
             // 
@@ -213,6 +232,16 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Cho biết danh sách các người thợ hiện không tham gia vào một  hợp đồng sửa chữa n" +
     "ào";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(208, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(438, 34);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Thợ không tham gia hợp đồng";
             // 
             // tab92
             // 
@@ -487,35 +516,6 @@
             this.label8.TabIndex = 4;
             this.label8.Text = "Thợ có tổng trị giá công việc cao nhất";
             // 
-            // panel6
-            // 
-            this.panel6.AutoScroll = true;
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.label12);
-            this.panel6.Location = new System.Drawing.Point(37, 51);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(782, 340);
-            this.panel6.TabIndex = 5;
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(18, 13);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(727, 384);
-            this.label12.TabIndex = 0;
-            this.label12.Text = resources.GetString("label12.Text");
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(208, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(438, 34);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Thợ không tham gia hợp đồng";
-            // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -542,11 +542,13 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tab);
             this.Name = "FormBai9";
-            this.Text = "FormBai9";
+            this.Text = "Bài 9";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormBai9_FormClosing);
             this.Load += new System.EventHandler(this.FormBai9_Load);
             this.tab.ResumeLayout(false);
             this.tab_Ketnoi.ResumeLayout(false);
             this.tab_Ketnoi.PerformLayout();
+            this.panel6.ResumeLayout(false);
             this.tab91.ResumeLayout(false);
             this.tab91.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv91)).EndInit();
@@ -567,7 +569,6 @@
             this.tab95.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv95)).EndInit();
             this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);

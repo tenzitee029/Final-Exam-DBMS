@@ -875,7 +875,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tab);
             this.Name = "FormBai7";
-            this.Text = "FormBai7";
+            this.Text = "Bài 7";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormBai7_FormClosing);
             this.Load += new System.EventHandler(this.FormBai7_Load);
             this.tab.ResumeLayout(false);

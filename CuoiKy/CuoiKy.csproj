@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormBai10-1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBai10-1.Designer.cs">
+      <DependentUpon>FormBai10-1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBai10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBai10.Designer.cs">
+      <DependentUpon>FormBai10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBai10_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBai10_2.Designer.cs">
+      <DependentUpon>FormBai10_2.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormBai2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +131,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyThuVienDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormBai10-1.resx">
+      <DependentUpon>FormBai10-1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBai10.resx">
+      <DependentUpon>FormBai10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBai10_2.resx">
+      <DependentUpon>FormBai10_2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormBai2.resx">
       <DependentUpon>FormBai2.cs</DependentUpon>
     </EmbeddedResource>

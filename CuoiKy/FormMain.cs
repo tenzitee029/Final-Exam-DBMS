@@ -73,7 +73,8 @@ namespace CuoiKy
 
         private void btn_Bai10_Click(object sender, EventArgs e)
         {
-
+            FormBai10 f = new FormBai10();
+            f.ShowDialog();
         }
 
         private void FormMain_Load(object sender, EventArgs e)
