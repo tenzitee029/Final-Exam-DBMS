@@ -100,7 +100,7 @@ namespace CuoiKy
         {
             if (string.IsNullOrWhiteSpace(txt_isbn61.Text) || string.IsNullOrWhiteSpace(txt_masach61.Text))
             {
-                MessageBox.Show("Vui lòng nhập mã ISBN và Mã cuốn sách hợp lệ", "Thông báo");
+                MessageBox.Show("Vui lòng nhập mã ISBN và Mã cuốn sách hợp lệ");
                 return;
             }
             SqlTransaction tran = sqlCon.BeginTransaction();
@@ -125,7 +125,7 @@ namespace CuoiKy
                     }
                 }
                 tran.Rollback();
-                MessageBox.Show("Đã xóa thành công");
+                MessageBox.Show("Dữ liệu hợp lệ");
             }
             catch (Exception ex)
             {
@@ -153,7 +153,7 @@ namespace CuoiKy
                     cmd.Parameters.AddWithValue("@madg", int.Parse(txt_madg62.Text.Trim()));
 
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Thêm lượt mượn thành công");
+                    MessageBox.Show("Dữ liệu hợp lệ");
                 }
                 HienThiDuLieu("SELECT * FROM Cuonsach", dgv62);
             }
@@ -181,7 +181,7 @@ namespace CuoiKy
                     cmd.Parameters.AddWithValue("@macuon", int.Parse(txt_masach63.Text.Trim()));
 
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Đã cập nhật thành công");
+                    MessageBox.Show("Dữ liệu hợp lệ");
                 }
                 HienThiDuLieu("SELECT * FROM Dausach", dgv63);
             }
@@ -209,7 +209,7 @@ namespace CuoiKy
                 }
 
                 tran.Rollback();
-                MessageBox.Show("Đã cập nhật thành công");
+                MessageBox.Show("Dữ liệu hợp lệ");
             }
             catch (Exception ex)
             {
