@@ -201,10 +201,10 @@ namespace CuoiKy
                 try
                 {
                     string sql = @"
-                    BEGIN TRAN;
-                        INSERT INTO BUOITHI (HKY, NGAY, GIO, PHG, MAMH, TGTHI)
-                        VALUES (@hk, @ngay, @gio, @phg, @mamh, @tgthi);
-                    ROLLBACK TRAN;";
+                        BEGIN TRAN;
+                            INSERT INTO BUOITHI (HKY, NGAY, GIO, PHG, MAMH, TGTHI)
+                            VALUES (@hk, @ngay, @gio, @phg, @mamh, @tgthi);
+                        ROLLBACK TRAN;";
                     using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
                     {
                         cmd.Parameters.AddWithValue("@hk", int.Parse(txt_HK_101b.Text.Trim()));
@@ -268,10 +268,10 @@ namespace CuoiKy
             try
             {
                 string sql = @"
-            BEGIN TRAN;
-                INSERT INTO BUOITHI (HKY, NGAY, GIO, PHG, MAMH, TGTHI)
-                VALUES (@hk, @ngay, @gio, @phg, @mamh, @tgthi);
-            ROLLBACK TRAN;";
+                    BEGIN TRAN;
+                        INSERT INTO BUOITHI (HKY, NGAY, GIO, PHG, MAMH, TGTHI)
+                        VALUES (@hk, @ngay, @gio, @phg, @mamh, @tgthi);
+                    ROLLBACK TRAN;";
 
                 using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
                 {
