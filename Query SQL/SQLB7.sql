@@ -7,11 +7,15 @@ RETURNS FLOAT
 AS
 BEGIN
     DECLARE @LuongTB FLOAT;
-    SELECT @LuongTB = AVG(Luong)
-    FROM NHANVIEN
-    WHERE MaPB = @MaPB;
-
-    RETURN ISNULL(@LuongTB, 0);
+    SELECT @LuongTB = AVG(nv.Luong + dbo.fn_TinhTienThuong(ISNULL(pc.TongGio, 0)))
+    FROM NHANVIEN nv
+    LEFT JOIN (
+        SELECT MaNV, SUM(ThoiGian) AS TongGio 
+        FROM PHANCONG 
+        GROUP BY MaNV
+    ) pc ON nv.MaNV = pc.MaNV
+    WHERE nv.MaPB = @MaPB;
+    RETURN @LuongTB;
 END;
 GO
 
@@ -25,11 +29,11 @@ RETURNS FLOAT
 AS
 BEGIN
     DECLARE @TongLuong FLOAT;
-    SELECT @TongLuong = (nv.Luong / 160.0) * pc.ThoiGian
+    SELECT @TongLuong = (nv.Luong / 160.0) * pc.ThoiGian + dbo.fn_TinhTienThuong(pc.ThoiGian)
     FROM NHANVIEN nv
     JOIN PHANCONG pc ON nv.MaNV = pc.MaNV
-    WHERE nv.MaNV = @MaNV AND pc.MaDA = @MaDA;
-    RETURN ISNULL(@TongLuong, 0);
+    WHERE nv.MaNV = @MaNV AND pc.MaDA = @MaDA;   
+    RETURN @TongLuong;
 END;
 GO
 
@@ -46,10 +50,8 @@ RETURN
     SELECT 
         pb.MaPB,
         pb.TenPB,
-        ISNULL(AVG(nv.Luong), 0) AS LuongTrungBinh
+        dbo.fn_LuongTrungBinh_PhongBan(pb.MaPB) AS LuongTrungBinh
     FROM PHONGBAN pb
-    LEFT JOIN NHANVIEN nv ON pb.MaPB = nv.MaPB
-    GROUP BY pb.MaPB, pb.TenPB
 );
 GO
 
@@ -94,7 +96,7 @@ RETURN
         pb.TenPB,
         COUNT(da.MaDA) AS TongSoDuAn
     FROM PHONGBAN pb
-    LEFT JOIN DEAN da ON pb.MaPB = da.MaPB
+    JOIN DEAN da ON pb.MaPB = da.MaPB
     GROUP BY pb.MaPB, pb.TenPB
 );
 GO
@@ -113,8 +115,11 @@ RETURN
         nv.MaNV,
         (nv.HoNV + ' ' + nv.TenLot + ' ' + nv.TenNV) AS HoTen,
         nv.NgaySinh,
-        ISNULL(tn.TenTN, N'Không có') AS NguoiThan,
-        (SELECT ISNULL(AVG(Luong), 0) FROM NHANVIEN WHERE MaPB = nv.MaPB) AS TongLuongTB
+        nv.Luong AS LuongCoBan,
+        dbo.fn_TinhTienThuong((SELECT SUM(ThoiGian) FROM PHANCONG WHERE MaNV = nv.MaNV)) AS LuongThuong,
+        (nv.Luong + dbo.fn_TinhTienThuong((SELECT SUM(ThoiGian) FROM PHANCONG WHERE MaNV = nv.MaNV))) AS TongLuongNhan,
+        tn.TenTN AS NguoiThan,
+        dbo.fn_LuongTrungBinh_PhongBan(nv.MaPB) AS TongLuongTB
     FROM NHANVIEN nv
     LEFT JOIN THANNHAN tn ON nv.MaNV = tn.MaNV
 );
@@ -130,6 +135,9 @@ RETURNS @BangKetQua TABLE
     MaNV VARCHAR(9),
     HoTen NVARCHAR(70),
     NgaySinh DATE,
+    LuongCoBan FLOAT,
+    LuongThuong INT,
+    TongLuongNhan FLOAT,
     NguoiThan NVARCHAR(50),
     TongLuongTB FLOAT
 )
@@ -140,10 +148,14 @@ BEGIN
         nv.MaNV,
         (nv.HoNV + ' ' + nv.TenLot + ' ' + nv.TenNV) AS HoTen,
         nv.NgaySinh,
-        ISNULL(tn.TenTN, N'Không có') AS NguoiThan,
-        (SELECT ISNULL(AVG(Luong), 0) FROM NHANVIEN WHERE MaPB = nv.MaPB) AS TongLuongTB
+        nv.Luong AS LuongCoBan,
+        dbo.fn_TinhTienThuong((SELECT SUM(ThoiGian) FROM PHANCONG WHERE MaNV = nv.MaNV)) AS LuongThuong,
+        (nv.Luong + dbo.fn_TinhTienThuong((SELECT SUM(ThoiGian) FROM PHANCONG WHERE MaNV = nv.MaNV))) AS TongLuongNhan,
+        tn.TenTN AS NguoiThan,
+        dbo.fn_LuongTrungBinh_PhongBan(nv.MaPB) AS TongLuongTB
     FROM NHANVIEN nv
     LEFT JOIN THANNHAN tn ON nv.MaNV = tn.MaNV;
+
     RETURN;
 END;
 GO
