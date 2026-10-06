@@ -264,7 +264,7 @@ namespace CuoiKy
             }
         }
 
-        private void btn_thongke74_Click(object sender, EventArgs e)
+        private void btn_thongke75_Click(object sender, EventArgs e)
         {
             try
             {

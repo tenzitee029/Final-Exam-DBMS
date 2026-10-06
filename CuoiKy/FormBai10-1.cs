@@ -67,7 +67,10 @@ namespace CuoiKy
                     ssl_Trangthai.Text = "Đã kết nối";
                     ssl_Trangthai.ForeColor = Color.Green;
 
-                    HienThiDuLieu("SELECT * FROM GV", dgv_dta);
+                    HienThiDuLieu(@"
+                            SELECT bt.HKY, bt.NGAY, bt.GIO, bt.PHG, bt.MAMH, mh.TENMH
+                            FROM BUOITHI bt 
+                            JOIN MHOC mh ON bt.MAMH = mh.MAMH", dgv_dta);
                     HienThiDuLieu("SELECT * FROM PC_COI_THI", dgv_a);
                     HienThiDuLieu("SELECT * FROM MHOC", dgv_dtb);
                     HienThiDuLieu("SELECT * FROM BUOITHI", dgv_b);
@@ -136,10 +139,8 @@ namespace CuoiKy
             try
             {
                 string sql = @"
-                    BEGIN TRAN;
                         INSERT INTO PC_COI_THI (MAGV, HK, NGAY, GIO, PHG)
-                        VALUES (@magv, @hk, @ngay, @gio, @phg);
-                    ROLLBACK TRAN;";
+                        VALUES (@magv, @hk, @ngay, @gio, @phg)";
                 using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
                 {
                     cmd.Parameters.AddWithValue("@magv", txt_MaGV_101a.Text.Trim());
@@ -201,10 +202,8 @@ namespace CuoiKy
                 try
                 {
                     string sql = @"
-                        BEGIN TRAN;
                             INSERT INTO BUOITHI (HKY, NGAY, GIO, PHG, MAMH, TGTHI)
-                            VALUES (@hk, @ngay, @gio, @phg, @mamh, @tgthi);
-                        ROLLBACK TRAN;";
+                            VALUES (@hk, @ngay, @gio, @phg, @mamh, @tgthi)";
                     using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
                     {
                         cmd.Parameters.AddWithValue("@hk", int.Parse(txt_HK_101b.Text.Trim()));
@@ -268,10 +267,8 @@ namespace CuoiKy
             try
             {
                 string sql = @"
-                    BEGIN TRAN;
                         INSERT INTO BUOITHI (HKY, NGAY, GIO, PHG, MAMH, TGTHI)
-                        VALUES (@hk, @ngay, @gio, @phg, @mamh, @tgthi);
-                    ROLLBACK TRAN;";
+                        VALUES (@hk, @ngay, @gio, @phg, @mamh, @tgthi)";
 
                 using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
                 {

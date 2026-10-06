@@ -77,7 +77,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.tab75 = new System.Windows.Forms.TabPage();
             this.label21 = new System.Windows.Forms.Label();
-            this.btn_thongke74 = new System.Windows.Forms.Button();
+            this.btn_thongke75 = new System.Windows.Forms.Button();
             this.dgv_tk75 = new System.Windows.Forms.DataGridView();
             this.dgv_full75 = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -136,6 +136,7 @@
             this.tab.SelectedIndex = 0;
             this.tab.Size = new System.Drawing.Size(844, 528);
             this.tab.TabIndex = 0;
+            this.tab.Click += new System.EventHandler(this.btn_thongke75_Click);
             // 
             // tab_Hethong
             // 
@@ -421,7 +422,7 @@
             this.label7.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(67, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(611, 33);
+            this.label7.Size = new System.Drawing.Size(670, 33);
             this.label7.TabIndex = 0;
             this.label7.Text = "Viết hàm trả về tổng lương nhận được của nhân viên theo dự án (truyền vào MaNV và" +
     " MaDA)";
@@ -647,7 +648,7 @@
             // 
             this.tab75.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tab75.Controls.Add(this.label21);
-            this.tab75.Controls.Add(this.btn_thongke74);
+            this.tab75.Controls.Add(this.btn_thongke75);
             this.tab75.Controls.Add(this.dgv_tk75);
             this.tab75.Controls.Add(this.dgv_full75);
             this.tab75.Controls.Add(this.panel5);
@@ -668,18 +669,18 @@
             this.label21.TabIndex = 5;
             this.label21.Text = "Số dự án";
             // 
-            // btn_thongke74
+            // btn_thongke75
             // 
-            this.btn_thongke74.BackColor = System.Drawing.Color.LightCyan;
-            this.btn_thongke74.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_thongke74.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_thongke74.Location = new System.Drawing.Point(699, 264);
-            this.btn_thongke74.Name = "btn_thongke74";
-            this.btn_thongke74.Size = new System.Drawing.Size(98, 43);
-            this.btn_thongke74.TabIndex = 4;
-            this.btn_thongke74.Text = "Thống kê";
-            this.btn_thongke74.UseVisualStyleBackColor = false;
-            this.btn_thongke74.Click += new System.EventHandler(this.btn_thongke74_Click);
+            this.btn_thongke75.BackColor = System.Drawing.Color.LightCyan;
+            this.btn_thongke75.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_thongke75.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_thongke75.Location = new System.Drawing.Point(699, 264);
+            this.btn_thongke75.Name = "btn_thongke75";
+            this.btn_thongke75.Size = new System.Drawing.Size(98, 43);
+            this.btn_thongke75.TabIndex = 4;
+            this.btn_thongke75.Text = "Thống kê";
+            this.btn_thongke75.UseVisualStyleBackColor = false;
+            this.btn_thongke75.Click += new System.EventHandler(this.btn_thongke75_Click);
             // 
             // dgv_tk75
             // 
@@ -974,7 +975,7 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Button btn_thongke74;
+        private System.Windows.Forms.Button btn_thongke75;
         private System.Windows.Forms.DataGridView dgv_tk75;
         private System.Windows.Forms.DataGridView dgv_full75;
         private System.Windows.Forms.Label label21;

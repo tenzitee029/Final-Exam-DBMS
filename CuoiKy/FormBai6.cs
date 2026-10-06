@@ -111,20 +111,13 @@ namespace CuoiKy
             try
             {
                 string sql = @"
-                    BEGIN TRAN;
-                        DELETE FROM Muon WHERE isbn = @isbn AND ma_cuonsach = @macuon;
-                    ROLLBACK TRAN;";
+                        DELETE FROM Muon WHERE isbn = @isbn AND ma_cuonsach = @macuon";
                 using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
                 {
                     cmd.Parameters.AddWithValue("@isbn", txt_isbn61.Text.Trim());
                     cmd.Parameters.AddWithValue("@macuon", maCuon);
                     cmd.ExecuteNonQuery();
-                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
-                    {
-                        DataTable dt = new DataTable();
-                        da.Fill(dt);
-                        dgv61.DataSource = dt;
-                    }
+                    HienThiDuLieu("SELECT * FROM Cuonsach", dgv61);
                 }
                 MessageBox.Show("Dữ liệu hợp lệ");
             }
@@ -162,16 +155,15 @@ namespace CuoiKy
             try
             {
                 string sql = @"
-                    BEGIN TRAN;
                         INSERT INTO Muon (isbn, ma_cuonsach, ma_DocGia, ngay_muon, ngay_hethan) 
-                        VALUES (@isbn, @macuon, @madg, CAST(GETDATE() AS DATE), DATEADD(day, 14, CAST(GETDATE() AS DATE)));
-                    ROLLBACK TRAN;";
+                        VALUES (@isbn, @macuon, @madg, CAST(GETDATE() AS DATE), DATEADD(day, 14, CAST(GETDATE() AS DATE)));";
                 using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
                 {
                     cmd.Parameters.AddWithValue("@isbn", txt_isbn62.Text.Trim());
                     cmd.Parameters.AddWithValue("@macuon", maCuon);
                     cmd.Parameters.AddWithValue("@madg", maDG);
                     cmd.ExecuteNonQuery();
+                    HienThiDuLieu("SELECT cs.isbn, cs.ma_cuonsach, cs.tinhtrang, m.ma_DocGia, m.ngay_muon, m.ngay_hethan FROM Cuonsach cs LEFT JOIN Muon m ON cs.isbn = m.isbn AND cs.ma_cuonsach = m.ma_cuonsach", dgv63);
                 }
                 MessageBox.Show("Dữ liệu hợp lệ");
             }
@@ -202,17 +194,16 @@ namespace CuoiKy
             try
             {
                 string sql = @"
-                    BEGIN TRAN;
                         UPDATE Cuonsach 
                         SET tinhtrang = @tinhtrang 
-                        WHERE isbn = @isbn AND ma_cuonsach = @macuon;
-                    ROLLBACK TRAN;";
+                        WHERE isbn = @isbn AND ma_cuonsach = @macuon";
                 using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
                 {
                     cmd.Parameters.AddWithValue("@tinhtrang", cbo_tinhtrang63.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@isbn", txt_isbn63.Text.Trim());
                     cmd.Parameters.AddWithValue("@macuon", maCuon);
                     cmd.ExecuteNonQuery();
+                    HienThiDuLieu("SELECT * FROM Dausach", dgv63);
                 }
                 MessageBox.Show("Dữ liệu hợp lệ");
             }
@@ -243,19 +234,17 @@ namespace CuoiKy
             try
             {
                 string sql = @"
-                    BEGIN TRAN;
                         UPDATE Tuasach 
                         SET tacgia = @tacgia 
-                        WHERE ma_tuasach = @matua;
-                    ROLLBACK TRAN;";
-
+                        WHERE ma_tuasach = @matua";
                 using (SqlCommand cmd = new SqlCommand(sql, sqlCon))
                 {
                     cmd.Parameters.AddWithValue("@tacgia", txt_tg64.Text.Trim());
                     cmd.Parameters.AddWithValue("@matua", maTua);
                     cmd.ExecuteNonQuery();
+                    HienThiDuLieu("SELECT * FROM Tuasach", dgv64);
                 }
-                MessageBox.Show("Dữ liệu hợp lệ");
+                MessageBox.Show("Đã thêm mới tựa sách");
             }
             catch (SqlException ex)
             {

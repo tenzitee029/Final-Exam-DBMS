@@ -57,12 +57,12 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.tab_d = new System.Windows.Forms.TabPage();
-            this.tab_e = new System.Windows.Forms.TabPage();
             this.dgv_d = new System.Windows.Forms.DataGridView();
             this.btn_Thongked = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
+            this.tab_e = new System.Windows.Forms.TabPage();
             this.dgv_e = new System.Windows.Forms.DataGridView();
             this.btn_Thongkee = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -82,9 +82,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_c)).BeginInit();
             this.panel3.SuspendLayout();
             this.tab_d.SuspendLayout();
-            this.tab_e.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_d)).BeginInit();
             this.panel4.SuspendLayout();
+            this.tab_e.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_e)).BeginInit();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
@@ -393,9 +393,9 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(129, 7);
+            this.label7.Location = new System.Drawing.Point(81, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(494, 27);
+            this.label7.Size = new System.Drawing.Size(591, 27);
             this.label7.TabIndex = 0;
             this.label7.Text = "Danh sách giáo viên không được phân công gác thi trong học kỳ 1";
             // 
@@ -411,19 +411,6 @@
             this.tab_d.Size = new System.Drawing.Size(792, 395);
             this.tab_d.TabIndex = 4;
             this.tab_d.Text = "Câu d";
-            // 
-            // tab_e
-            // 
-            this.tab_e.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tab_e.Controls.Add(this.dgv_e);
-            this.tab_e.Controls.Add(this.btn_Thongkee);
-            this.tab_e.Controls.Add(this.label10);
-            this.tab_e.Controls.Add(this.panel5);
-            this.tab_e.Location = new System.Drawing.Point(4, 25);
-            this.tab_e.Name = "tab_e";
-            this.tab_e.Size = new System.Drawing.Size(792, 395);
-            this.tab_e.TabIndex = 5;
-            this.tab_e.Text = "Câu e";
             // 
             // dgv_d
             // 
@@ -480,6 +467,19 @@
             this.label9.Size = new System.Drawing.Size(436, 27);
             this.label9.TabIndex = 0;
             this.label9.Text = "Cho biết lịch thi môn văn (TENMH = ‘VĂN HỌC’)";
+            // 
+            // tab_e
+            // 
+            this.tab_e.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tab_e.Controls.Add(this.dgv_e);
+            this.tab_e.Controls.Add(this.btn_Thongkee);
+            this.tab_e.Controls.Add(this.label10);
+            this.tab_e.Controls.Add(this.panel5);
+            this.tab_e.Location = new System.Drawing.Point(4, 25);
+            this.tab_e.Name = "tab_e";
+            this.tab_e.Size = new System.Drawing.Size(792, 395);
+            this.tab_e.TabIndex = 5;
+            this.tab_e.Text = "Câu e";
             // 
             // dgv_e
             // 
@@ -569,10 +569,10 @@
             this.panel3.ResumeLayout(false);
             this.tab_d.ResumeLayout(false);
             this.tab_d.PerformLayout();
-            this.tab_e.ResumeLayout(false);
-            this.tab_e.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_d)).EndInit();
             this.panel4.ResumeLayout(false);
+            this.tab_e.ResumeLayout(false);
+            this.tab_e.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_e)).EndInit();
             this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
